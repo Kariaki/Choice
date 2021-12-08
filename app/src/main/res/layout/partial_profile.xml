@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/partialProfileRootView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_sheet_curve"
+
+        >
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            app:contentInsetStart="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/topHolder"
+                    android:layout_width="50dp"
+                    android:layout_height="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/round_background"
+                    android:orientation="vertical"
+
+                    />
+
+                <TextView
+                    android:id="@+id/partialProfileUserLastSeen"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:text="@string/last_seen"
+                    android:textColor="@color/textContext" />
+
+                <TextView
+                    android:id="@+id/partialProfileUserOnLineStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+
+                    android:layout_toEndOf="@id/partialProfileUserLastSeen"
+
+                    android:accessibilityTraversalBefore="@id/partialProfileUserName"
+                    android:textColor="@color/textContext" />
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/partialProfilePicture"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@id/toolbar"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/gideon"
+            android:transitionName="toprofile" />
+
+        <TextView
+            android:id="@+id/partialProfileUserName"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/partialProfilePicture"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@id/partialProfilePicture"
+            android:text="Modecai paul"
+            android:textColor="@color/textContext"
+
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/bioHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/partialProfilePicture"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/aboutIcon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="50dp"
+                android:padding="5sp"
+                android:text="Bio"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <com.vanniktech.emoji.EmojiTextView
+                android:id="@+id/partialProfileAboutUser"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:maxWidth="300dp"
+                android:text="Na me build the app so it e crash no vex for me"
+                android:textColor="@color/textContext"
+
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/profileHandleName"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/partialProfileUserName"
+
+            android:layout_alignStart="@id/partialProfileUserName"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/partialProfilePicture"
+            android:textColor="@color/colorPrimary"
+
+            />
+
+        <LinearLayout
+            android:id="@+id/messageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profileHandleName"
+            android:layout_alignStart="@id/partialProfileUserName"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:padding="7dp"
+                android:src="@drawable/new_circular_comment"
+
+                android:layout_height="35dp"/>
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_marginStart="50dp"
+                android:padding="5dp"
+                android:background="@drawable/color_stroke"
+                android:src="@drawable/new_bell"
+                android:layout_height="35dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/social_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bioHolder"
+            android:layout_alignStart="@+id/partialProfilePicture"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/postsCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/post"
+                    android:textColor="@color/textColor"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/repostCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="@string/re_post"
+                    android:textColor="@color/textColor"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/repeatsCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="@string/repeats"
+                    android:textColor="@color/textColor"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/textColor" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:textColor="@color/textContext" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:textColor="@color/textContext" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/openFullProfile"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/social_details"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/view_all_profile_background"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="View Full profile"
+                android:textColor="@color/whiteGreen"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

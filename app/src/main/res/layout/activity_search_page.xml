@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:id="@+id/rootView"
+    tools:context="com.kariaki.choice.UI.MainPage.SearchPage">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:contentInsetStart="0dp"
+        android:id="@+id/toolbar"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:id="@+id/backArrow"
+                android:onClick="backPress"
+                android:layout_centerVertical="true"
+                android:src="@drawable/colored_back_arrow"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_toEndOf="@id/backArrow"
+                android:inputType="text"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/colorPrimary"
+                android:text=""
+                android:background="@drawable/background"
+                android:hint="search for people"
+                android:layout_centerVertical="true"
+                android:textColorHint="@color/textContext"
+                android:focusable="true"
+                android:layout_toStartOf="@+id/cancelSearch"
+                android:id="@+id/searchInput"
+                />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/cancel"
+                android:background="@drawable/cancel_background"
+                android:layout_marginStart="5dp"
+                android:padding="3dp"
+                android:visibility="gone"
+                android:layout_marginEnd="5dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/cancelSearch"
+                android:layout_alignParentEnd="true"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/lineBackground"
+                />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="10dp"
+        android:id="@+id/searchResult"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:id="@+id/infoHolder"
+        >
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/network"
+            android:id="@+id/infoImage"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/infoText"
+            android:text="Search network"
+            android:textSize="20sp"
+            android:layout_marginStart="20dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/textContext"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

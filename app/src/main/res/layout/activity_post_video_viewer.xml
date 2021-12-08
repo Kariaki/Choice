@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/videoPostRootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grayGreen"
+    tools:context="com.kariaki.choice.UI.Post.Viewer.PostVideoViewer">
+
+    <ImageView
+        android:id="@+id/viewVideoBackArrow"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:onClick="videoBackPress"
+        android:src="@drawable/colored_back_arrow"
+        android:visibility="visible" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/blurVideoBackground"
+
+        android:layout_height="match_parent"
+        />
+    <VideoView
+        android:id="@+id/postViewVideoView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+
+        />
+
+    <ImageView
+        android:id="@+id/CreateVideoPlayPauseButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/pause_play_button_background"
+        android:src="@drawable/play_icon"
+        android:visibility="gone"
+
+        />
+
+    <ProgressBar
+        android:id="@+id/videoPlayProgressBar"
+        android:layout_width="50dp"
+        android:visibility="gone"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        android:progressBackgroundTint="@color/colorPrimary"
+        android:progressTint="@color/colorPrimary"
+        android:secondaryProgressTint="@color/colorPrimary" />
+
+
+    <RelativeLayout
+        android:id="@+id/videoPlayContainer"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/videoplay_background"
+        android:paddingBottom="20dp">
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/videoViewerSeekbar"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_marginTop="10sp"
+            android:layout_toEndOf="@+id/videoViewerPlaybutton"
+            android:progressTint="@color/lineBackground"
+            android:thumbTint="@color/colorPrimary" />
+
+        <ImageView
+            android:id="@+id/videoViewerPlaybutton"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/pause_filled" />
+
+        <TextView
+            android:id="@+id/videoViewerDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/videoViewerSeekbar"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/viewHolder"
+
+            android:layout_below="@+id/videoViewerPlaybutton"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="40dp"
+
+            android:layout_marginTop="20dp">
+
+            <ToggleButton
+                android:id="@+id/videoPostlikeButton"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/likestate"
+                android:textOff=""
+                android:textOn="" />
+
+            <TextView
+                android:id="@+id/videoPostLikeCount"
+                android:layout_width="35dp"
+                android:textColor="@color/textContext"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center_vertical"
+
+
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/videoPostComment"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="30dp"
+                android:onClick="onClickComment"
+                android:background="@android:color/transparent"
+                android:src="@drawable/chat" />
+
+            <TextView
+                android:id="@+id/videoPostCommentCount"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/textContext"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/videoPostshareButton"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="30dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/share"
+                android:visibility="visible" />
+
+            <ToggleButton
+                android:id="@+id/VideoloopButton"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/loop_state"
+                android:textOff=""
+                android:textOn=""
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:id="@+id/editCommentArea"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            >
+
+            <RelativeLayout
+                android:id="@+id/editCommentBottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:background="@android:color/transparent">
+
+                <ImageButton
+                    android:id="@+id/commentPageCamera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="5dp"
+                    android:visibility="invisible"
+                    android:background="?android:selectableItemBackgroundBorderless"
+
+                    android:padding="5dp"
+                    android:src="@drawable/camera" />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/one"
+                    android:id="@+id/profileImage"
+                    />
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:indeterminate="false"
+                    android:id="@+id/voiceNoteSendProgress"
+                    />
+
+                <ImageButton
+                    android:id="@+id/commentPageExtension"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/commentEditTextArea"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/commentPageCamera"
+                    android:background="?android:selectableItemBackgroundBorderless"
+                    android:padding="5dp"
+                    android:visibility="gone"
+                    android:src="@drawable/comment_photo"
+
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/commentEditTextArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toEndOf="@id/commentPageExtension"
+                    android:background="@drawable/view_comment_background">
+
+                    <TextView
+                        android:id="@+id/privateCommentNote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20dp"
+                        android:text="Long click send, to comment privately"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="10dp"
+                        android:visibility="gone" />
+
+                    <Chronometer
+                        android:id="@+id/commentVoiceNoteCounter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@android:color/holo_red_light"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:visibility="invisible"
+
+                        />
+
+                    <com.vanniktech.emoji.EmojiEditText
+                        android:id="@+id/write_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/privateCommentNote"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_toStartOf="@+id/commentPageEmoji"
+                        android:background="@drawable/background"
+                        android:hint="comment here"
+                        android:maxHeight="130dp"
+                        android:textColorHint="@color/textContext"
+                        android:minHeight="40dp"
+                        android:paddingStart="10sp"
+                        android:textColor="@color/whiteGreen"
+
+                        android:paddingTop="5dp"
+
+                        android:paddingBottom="5dp"
+                        android:scrollbarStyle="outsideInset"
+                        android:scrollbars="vertical"
+                        android:textSize="15dp" />
+
+                    <ImageButton
+                        android:id="@+id/commentPageSend"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/write_comment"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="?android:selectableItemBackgroundBorderless"
+
+                        android:padding="5dp"
+                        android:onClick="sendComment"
+                        android:src="@drawable/newsend"
+                        android:visibility="invisible" />
+
+                    <ImageButton
+                        android:id="@+id/commentPageEmoji"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/write_comment"
+                        android:layout_marginEnd="3dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_toStartOf="@+id/commentPageSend"
+                        android:background="?android:selectableItemBackgroundBorderless"
+                        android:padding="5dp"
+                        android:src="@drawable/emoji" />
+
+                    <ImageButton
+                        android:id="@+id/commentPageKeyboard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/write_comment"
+                        android:layout_marginEnd="3dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_toStartOf="@+id/commentPageSend"
+                        android:background="?android:selectableItemBackgroundBorderless"
+                        android:padding="5dp"
+                        android:src="@drawable/keyboard"
+                        android:visibility="invisible" />
+
+
+                    <ImageButton
+                        android:id="@+id/commentPageMic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/write_comment"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="?android:selectableItemBackgroundBorderless"
+                        android:padding="5dp"
+                        android:src="@drawable/kayboard_voice" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="75dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/micFloat"
+                android:layout_alignBottom="@+id/editCommentBottom"
+                android:visibility="gone"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_height="75dp"
+                />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

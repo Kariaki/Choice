@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:background="@android:color/transparent">
+
+
+    <LinearLayout
+        android:id="@+id/curveHolder"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="vertical"
+        android:background="@drawable/bottom_sheet_curve">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/mainActivityToolbar"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:layout_margin="5dp"
+            app:contentInsetStart="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:id="@+id/topHolder"
+                    android:layout_width="50dp"
+                    android:layout_height="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/round_background"
+                    android:orientation="vertical"
+
+                    />
+
+                <TextView
+                    android:id="@+id/response"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/topHolder"
+
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/textContext"
+                    android:text=""
+
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+
+
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/statsList"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginBottom="5dp"
+            android:visibility="visible" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+
+        android:id="@+id/responseHolder"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/not_connected"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:id="@+id/responseText"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/textContext"
+            android:text="No response yet"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>
+

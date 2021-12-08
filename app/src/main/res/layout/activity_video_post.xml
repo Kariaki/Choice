@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kariaki.choice.UI.MakePost.VideoPost">
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:onClick="createVideoPostBackPress"
+        android:layout_margin="10dp"
+        android:id="@+id/videoPostBackButton"
+        android:src="@drawable/colored_back_arrow"
+        />
+
+
+    <VideoView
+        android:id="@+id/createVideoPostVideoView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+
+        />
+
+
+    <ImageView
+        android:id="@+id/CreateVideoPlayPauseButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/pause_play_button_background"
+        android:src="@drawable/play_icon"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+
+        />
+
+    <ProgressBar
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:progressBackgroundTint="@color/colorPrimary"
+        android:id="@+id/videviewProgressBar"
+        android:progressTint="@color/colorPrimary"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="50dp"
+        android:textColor="@android:color/white"
+        android:id="@+id/videoDuration"
+        android:layout_above="@id/videoRangeView"
+        />
+
+
+    <Button
+        android:id="@+id/videoPostNextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="5dp"
+        android:layout_marginStart="312dp"
+
+        android:layout_marginBottom="170dp"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:onClick="videoPostNext"
+        android:textColor="@color/colorPrimary"
+        android:text="Done"
+        />
+
+    <me.bendik.simplerangeview.SimpleRangeView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:movable="true"
+        android:visibility="visible"
+
+        android:background="@android:color/transparent"
+
+        app:activeLineColor="@color/colorPrimary"
+        app:activeThumbColor="@color/colorPrimary"
+        app:fixedThumbColor="@color/colorPrimary"
+        android:id="@+id/videoRangeView"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

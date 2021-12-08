@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/itemView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:layout_marginTop="10dp"
+    android:paddingBottom="5dp"
+    app:cardCornerRadius="7dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        android:padding="2dp">
+
+        <LinearLayout
+            android:id="@+id/otherInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+
+            android:orientation="horizontal"
+
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/otherInfoIcon"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:src="@drawable/share"
+                android:visibility="visible" />
+
+
+            <TextView
+                android:id="@+id/otherInfoName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/textContext"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/mergePostToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/otherInfo"
+
+            app:contentInsetStart="0dp"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+
+                    android:id="@+id/MergedPagerprofImage"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/square_place_holder"
+                    android:transitionName="image"
+
+                    />
+
+                <TextView
+                    android:id="@+id/MergedPageruserIDMergeds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@+id/MergedPagerprofImage"
+                    android:gravity="center_horizontal"
+                    android:textSize="15sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/mergePostTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@+id/MergedPageruserIDMergeds"
+                    android:layout_alignStart="@+id/MergedPageruserIDMergeds"
+                    android:textColor="@color/textContext"
+                    android:textSize="12sp" />
+
+                <ImageButton
+                    android:id="@+id/MergedPagerMoreOption"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/MergedPageruserIDMergeds"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/my_ripple"
+                    android:src="@drawable/more_horizontal" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <RelativeLayout
+            android:id="@+id/mergePostImageHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mergePostToolbar"
+            android:background="@android:color/background_dark"
+            android:transitionName="image"
+
+            >
+
+            <ImageView
+                android:id="@+id/MergedcustomImage"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_alignEnd="@+id/split"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/left_image_background"
+
+                android:scaleType="center"
+                android:src="@drawable/square_place_holder"
+
+                />
+
+            <View
+                android:id="@+id/split"
+                android:layout_width="7dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:background="#95AAAAAA" />
+
+            <ImageView
+                android:id="@+id/MergedcustomImageTwo"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_alignStart="@id/split"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/left_image_background"
+                android:scaleType="center"
+                android:src="@drawable/square_place_holder" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/mergePostImageHolder"
+            android:background="@color/semi_transparent">
+
+            <com.vanniktech.emoji.EmojiTextView
+                android:id="@+id/MergedPagerPostTitile"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+
+                android:layout_marginBottom="5dp"
+                android:maxWidth="100dp"
+                android:maxLines="5"
+                android:textSize="15sp"
+
+                />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/MergedPagerPostTitile">
+
+                <TextView
+                    android:id="@+id/viewsCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+
+                    android:textColor="@color/whiteGreen" />
+
+                <LinearLayout
+                    android:id="@+id/wrapper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="5dp">
+
+                    <LinearLayout
+                        android:id="@+id/commentClick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25dp"
+                            android:orientation="vertical">
+
+                            <ToggleButton
+                                android:id="@+id/Mergedlikeone"
+                                android:layout_width="20dp"
+                                android:layout_height="21dp"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@drawable/likestate"
+                                android:textOff=" "
+                                android:textOn=" "
+
+                                />
+
+                            <TextView
+                                android:id="@+id/MergedPostLikeOneCount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text=""
+                                android:textSize="12dp"
+                                android:textColor="@color/whiteGreen" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/MergedPostComment"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@drawable/my_ripple"
+                                android:src="@drawable/new_comment" />
+
+                            <TextView
+
+                                android:id="@+id/MergePostCommentCount"
+                                android:layout_width="wrap_content"
+
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text=""
+                                android:textColor="@color/whiteGreen"
+
+                                android:textSize="12dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:orientation="vertical">
+
+                        <ToggleButton
+                            android:id="@+id/Mergedliketwo"
+                            android:layout_width="20dp"
+                            android:layout_height="21dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/likestate"
+                            android:textOff=""
+                            android:textOn=""
+
+                            />
+
+                        <TextView
+                            android:id="@+id/MergedPostLikeTwoCount"
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text=""
+                            android:textColor="@color/whiteGreen"
+                            android:textSize="12dp"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginEnd="10dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/MergePostShare"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/my_ripple"
+                            android:src="@drawable/shareicon" />
+
+                        <TextView
+                            android:id="@+id/sharesCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text=""
+                            android:textColor="@color/whiteGreen"
+                            android:textSize="12dp"
+
+
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

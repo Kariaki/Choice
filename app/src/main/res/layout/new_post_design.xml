@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="10dp"
+    android:layout_height="550dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="@color/whiteGreen"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="5dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/one"
+                android:scaleType="centerCrop"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/activity_gradient2"
+
+                >
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/singlePostprofileImage"
+
+                    android:src="@drawable/two"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/singlePostUserID"
+                    android:layout_toEndOf="@+id/singlePostprofileImage"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/whiteGreen"
+                    android:text="Kariaki ebilate"
+                    android:layout_height="wrap_content"
+                    />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/more_vet"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginEnd="10dp"
+                android:layout_alignParentBottom="true"
+                android:gravity="end"
+                android:background="@drawable/activity_gradient"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="20dp"
+                    android:textColor="@color/whiteGreen"
+                    android:textSize="15sp"
+                    android:layout_marginBottom="10dp"
+                    android:lines="3"
+                    android:id="@+id/caption"
+                    android:text="@string/choice_writeUp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/caption"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="20dp"
+                    android:textColor="@color/whiteGreen"
+                    android:text="23views"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:orientation="horizontal"
+                    android:id="@+id/likeHolder"
+                    android:layout_below="@id/caption"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/commentClick"
+                        >
+                        <ImageView
+                            android:id="@+id/singlePostComment"
+                            android:layout_width="27dp"
+                            android:layout_height="27dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="40dp"
+                            android:background="?android:selectableItemBackground"
+                            android:src="@drawable/new_heart" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/singlePostlikeButton"
+                        android:layout_width="27dp"
+                        android:layout_height="27dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="40dp"
+                        android:src="@drawable/new_comment"
+                        />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="40dp"
+                        android:src="@drawable/shareiconwhite"
+                        />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatSeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:layout_below="@+id/likeHolder"
+
+                    />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

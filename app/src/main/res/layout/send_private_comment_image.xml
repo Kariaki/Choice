@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/post_icon"
+        android:id="@+id/postIcon"
+        android:layout_alignStart="@+id/sendCommentReplyContainter"
+        />
+
+    <com.vanniktech.emoji.EmojiTextView
+        android:id="@+id/sendPrivateImageCommentHeader"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="3dp"
+
+        android:maxWidth="200dp"
+        android:layout_toEndOf="@+id/postIcon"
+        android:layout_alignEnd="@+id/sendCommentReplyContainter"
+
+        android:textColor="@color/textContext"
+        android:textSize="10dp"
+        android:visibility="visible"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/sendCommentReplyContainter"
+        android:layout_below="@+id/sendPrivateImageCommentHeader"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="7dp"
+        android:orientation="vertical"
+        android:background="@drawable/top_background">
+
+        <ImageView
+            android:id="@+id/sendPrivateCommentImageUrl"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:minHeight="60dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/square_place_holder" />
+
+        <com.vanniktech.emoji.EmojiTextView
+            android:id="@+id/sendPrivateImageCommentPostCaption"
+            android:layout_width="wrap_content"
+            android:paddingEnd="10dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sendPrivateCommentImageUrl"
+            android:layout_marginStart="10sp"
+            android:maxLines="3"
+            android:visibility="gone"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/sendCommentReplyContainter"
+        android:layout_alignStart="@+id/sendCommentReplyContainter"
+
+        android:layout_marginEnd="7dp"
+        android:background="@drawable/under_background"
+
+        />
+
+    <RelativeLayout
+        android:id="@+id/recievePrivateCommentMessageContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sendCommentReplyContainter"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/send_comment_background"
+
+        android:paddingTop="5dp"
+        android:paddingEnd="5sp"
+
+        >
+
+        <com.vanniktech.emoji.EmojiTextView
+            android:id="@+id/sendPrivateImageCommentTextMessage"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="10dp"
+            android:maxWidth="250dp"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/sendMessaageTextTime"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/sendPrivateImageCommentTextMessage"
+            android:layout_marginEnd="5dp"
+            android:layout_toEndOf="@+id/sendPrivateImageCommentTextMessage"
+            android:text="14:14"
+            android:textColor="@color/whiteGreen"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/send_state"
+            android:layout_width="12dp"
+
+            android:layout_height="12dp"
+            android:layout_alignTop="@+id/sendMessaageTextTime"
+            android:layout_marginEnd="10sp"
+            android:layout_marginBottom="3dp"
+            android:layout_toEndOf="@+id/sendMessaageTextTime"
+            android:src="@drawable/not_seen_check" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

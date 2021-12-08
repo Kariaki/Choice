@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/recieveMessageSenderImage"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/recieveCommentTextMessageContainer"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="5dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        android:src="@drawable/imageplaceholder" />
+
+    <TextView
+        android:id="@+id/receiveMessaageTextTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="3dp"
+
+        android:layout_marginTop="2dp"
+        android:textColor="@color/textContext"
+
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/repliedholder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/receiveMessaageTextTime"
+        android:layout_alignStart="@+id/replyBottomContainer"
+        android:layout_marginTop="5dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/reply_to_left"
+
+            />
+
+        <TextView
+            android:id="@+id/replied"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/textContext"
+
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/TextnameHolder"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recieveCommentTextMessageContainer"
+        android:layout_alignStart="@+id/recieveCommentTextMessageContainer"
+
+        >
+
+        <TextView
+            android:id="@+id/recieveCommentSenderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="Kariaki Ebilate"
+            android:textColor="@color/textContext"
+            android:textSize="14dp"
+            android:visibility="invisible"
+
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/recieveCommentTextMessageContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/recieveMessageSenderImage"
+
+        >
+
+        <ImageView
+            android:id="@+id/indicator"
+            android:layout_width="7dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/back"
+            android:layout_alignBottom="@+id/back"
+            android:layout_marginStart="5dp"
+            android:background="@color/line_color1"
+            android:minHeight="50dp"
+
+            />
+
+        <LinearLayout
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/indicator"
+            android:background="@drawable/recieve_message_text_background"
+            android:orientation="vertical"
+            android:padding="3dp">
+
+            <RelativeLayout
+                android:id="@+id/replyTopContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:background="#417151A9"
+
+                android:visibility="gone"
+
+                >
+
+                <ImageView
+                    android:id="@+id/line1"
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/replyContent"
+                    android:layout_alignBottom="@+id/replyContent"
+
+                    android:layout_marginEnd="5dp"
+                    android:layout_toEndOf="@+id/replyContent"
+                    android:background="@color/colorPrimary"
+                    android:visibility="visible" />
+
+                <com.vanniktech.emoji.EmojiTextView
+                    android:id="@+id/replyContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="250dp"
+                    android:maxLines="3"
+                    android:paddingStart="15dp"
+                    android:text="snk holdfjasdkfaasdfja;sdjfs;da;sldjfkjasdasfdj"
+                    android:textSize="15sp"
+
+
+                    />
+            </RelativeLayout>
+
+            <com.vanniktech.emoji.EmojiTextView
+                android:id="@+id/recieveMessageMessage"
+                android:layout_width="wrap_content"
+
+
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+
+                android:layout_centerVertical="true"
+
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="5dp"
+                android:maxWidth="260dp"
+                android:minHeight="17dp"
+                android:paddingStart="10dp"
+
+
+                android:paddingTop="5dp"
+
+                android:paddingEnd="10dp"
+
+                android:paddingBottom="5dp"
+                android:text="i a raining and i am even cold"
+                android:textColor="@color/textColor"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

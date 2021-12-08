@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/finishPostRootView"
+    tools:context="com.kariaki.choice.UI.MakePost.FinishPost">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/finishPostToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/finishBackButton"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:background="?android:selectableItemBackgroundBorderless"
+                android:onClick="backPress"
+                android:src="@drawable/colored_back_arrow"
+
+                />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/finishBackButton"
+                android:text="Finish Post"
+                android:textColor="@color/colorPrimary"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/finishPostSettings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentEnd="true"
+                android:onClick="openPostSettings"
+                android:layout_centerVertical="true"
+
+                android:layout_marginEnd="10dp"
+
+                android:src="@drawable/settings"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/finishPostContainer"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/finishPostToolbar"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:id="@+id/finishPostLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/finishPostViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/finishPostVideoViewHolder"
+                android:layout_height="350dp"
+                >
+                <ImageView
+                    android:id="@+id/FinishPlayPauseButton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:onClick="backPress"
+                    android:background="@drawable/pause_play_button_background"
+                    android:src="@drawable/play_icon"
+                    android:layout_centerInParent="true"
+
+                    />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:src="@drawable/square_place_holder"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/finishPostVideoView"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/finishPostMergeHolder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/finishPostViewPager"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/finishPostImage1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignEnd="@id/splitter"
+                    android:layout_toStartOf="@id/splitter"
+                    android:adjustViewBounds="true"
+                    android:scaleType="center"
+                    android:src="@drawable/one" />
+
+                <View
+                    android:id="@+id/splitter"
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:background="@android:color/darker_gray" />
+
+                <ImageView
+                    android:id="@+id/finishPostImage2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@id/splitter"
+                    android:scaleType="center"
+                    android:src="@drawable/two" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/repeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/finishPostRepeat"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Repeat this post"
+
+        android:textColor="@color/textContext" />
+
+
+    <TextView
+        android:id="@+id/mergeText"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/repeat"
+        android:layout_alignTop="@+id/checkMerge"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/textContext"
+        android:layout_marginTop="15dp"
+
+        android:text="Merge This post" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/checkMerge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/repeat"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/mergeText" />
+
+    <ToggleButton
+        android:id="@+id/finishPostRepeat"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_below="@+id/finishPostContainer"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toEndOf="@+id/repeat"
+        android:background="@drawable/loop_state"
+
+        android:padding="5dp"
+        android:textOff=""
+        android:textOn="" />
+
+    <Button
+        android:id="@+id/finishpost"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/finishPostContainer"
+        android:layout_alignTop="@id/finishPostRepeat"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/squarebackgroun_one"
+        android:onClick="sendPost"
+
+        android:text="post"
+
+        android:textColor="@android:color/white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/finishPostRepeat"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp">
+
+        <com.vanniktech.emoji.EmojiEditText
+            android:id="@+id/finishPostCaption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/textContext"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:textColorHint="@color/textContext"
+            android:text=""
+            android:layout_marginBottom="20dp"
+            android:layout_toStartOf="@+id/finishPostEmoji"
+            android:background="@drawable/background"
+            android:hint="@string/write_a_caption"
+            android:maxHeight="200dp"
+            android:minHeight="40dp"
+            android:paddingStart="20dp"
+
+            />
+
+        <ImageButton
+            android:id="@+id/finishPostEmoji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/my_ripple"
+            android:src="@drawable/emoji" />
+
+        <ImageButton
+            android:id="@+id/finishPostKeyboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/my_ripple"
+            android:src="@drawable/keyboard" />
+    </RelativeLayout>
+</RelativeLayout>

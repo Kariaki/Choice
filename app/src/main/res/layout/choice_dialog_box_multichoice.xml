@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:paddingBottom="5dp"
+        android:layout_margin="10dp"
+        android:id="@+id/rootView"
+        android:background="@drawable/full_curve"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            app:contentInsetStart="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:id="@+id/topHolder"
+                    android:layout_width="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_height="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical"
+
+                    />
+
+                <TextView
+                    android:id="@+id/choiceDialogTittle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/topHolder"
+                    android:layout_marginStart="30dp"
+                    android:textSize="17sp"
+
+                    android:layout_marginEnd="20dp"
+                    android:background="?android:selectableItemBackgroundBorderless"
+                    android:text="Post Duration"
+                    android:textColor="@color/colorPrimary"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroup"
+            android:layout_below="@id/Toolbar"
+            android:layout_alignParentEnd="true"
+            >
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/choice1"
+                android:checked="false"
+                />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_marginTop="20dp"
+                android:id="@+id/choice2"
+                android:layout_height="wrap_content"
+                />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_marginTop="20dp"
+                android:id="@+id/choice3"
+                android:layout_height="wrap_content"
+                />
+        </RadioGroup>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/choiceList"
+            android:visibility="visible"
+            android:layout_below="@id/Toolbar"
+            android:layout_marginTop="5dp"
+            android:layout_toStartOf="@id/radioGroup"/>
+
+        <TextView
+            android:layout_width="150dp"
+            android:text="Cancel"
+            android:textSize="17sp"
+
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/dialogCancelProcess"
+            android:layout_marginStart="35dp"
+            android:gravity="start"
+            android:background="?android:selectableItemBackground"
+            android:layout_alignParentBottom="true"
+
+            android:layout_height="wrap_content"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:visibility="invisible"
+            android:background="@color/lineBackground"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10sp"
+
+            android:layout_alignParentBottom="true"
+
+            />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="17sp"
+            android:text="Confirm"
+
+            android:gravity="center"
+            android:id="@+id/choiceDialogConfirmProcess"
+            android:layout_marginEnd="10dp"
+            android:background="?android:selectableItemBackground"
+            android:textColor="@color/colorPrimary"
+
+            android:layout_height="wrap_content"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

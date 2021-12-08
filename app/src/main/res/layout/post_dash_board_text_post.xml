@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/itemView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="7dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+
+                android:background="@drawable/text_post_background">
+
+                <com.vanniktech.emoji.EmojiTextView
+                    android:id="@+id/dashBoardTextPostCaption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="55dp"
+                    android:gravity="center"
+                    android:maxLines="7"
+                    android:minHeight="60dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="30dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/choice_writeUp"
+                    android:paddingBottom="15dp"
+                    android:textColor="@color/whiteGreen"
+                    android:textSize="15dp" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/activity_gradient"
+                    android:orientation="horizontal">
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/dashBoardTextPostDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="5dp"
+                    android:lines="1"
+
+                    android:textColor="@color/whiteGreen"
+                    android:textSize="12dp" />
+
+                <ImageView
+                    android:id="@+id/dashBoardDeleteTextPost"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="end"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="20dp"
+
+                    android:padding="3dp"
+                    android:src="@drawable/more_horizontal" />
+
+                <RelativeLayout
+                    android:id="@+id/dashboardTextPostNotificationCountHolder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/color_background"
+                    android:minWidth="23dp"
+
+                    android:minHeight="23dp"
+
+                    android:padding="5dp"
+                    android:visibility="invisible"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/dashBoardTextPostNotificationCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/whiteGreen"
+                        android:textSize="20dp" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+
+                    android:layout_centerVertical="true"
+
+
+                    android:layout_marginEnd="5dp"
+                    android:orientation="vertical"
+
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/heart1" />
+
+                    <TextView
+
+                        android:id="@+id/textDashBoardLikeCount"
+                        android:layout_width="wrap_content"
+                        android:layout_marginBottom="3dp"
+
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/whiteGreen"
+                        android:textSize="12dp" />
+
+                    <ImageView
+                        android:id="@+id/postDashBoardTextComment"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="2dp"
+                        android:src="@drawable/new_circular_comment_tint" />
+
+                    <TextView
+
+                        android:id="@+id/textDashBoardCommentCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+
+                        android:textColor="@color/whiteGreen"
+                        android:textSize="12sp"
+
+                        />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

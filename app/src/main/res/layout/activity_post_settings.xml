@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:background="@color/whiteGreen"
+    android:id="@+id/postSettingsRootView"
+    android:layout_height="match_parent"
+    tools:context="com.kariaki.choice.UI.Settings.PostSettings">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="always"
+        android:scrollbars="vertical"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="70dp"
+
+            >
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/otherUserProfileToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                app:contentInsetStart="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/ProfileBackButton"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:onClick="backPress"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="2dp"
+                        android:src="@drawable/colored_back_arrow" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="16sp"
+                        android:id="@+id/postSettingsText"
+                        android:layout_toEndOf="@+id/ProfileBackButton"
+                        android:text="@string/post_settings"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/lineBackground"
+                        />
+                </RelativeLayout>
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:id="@+id/postSettingsPrivateComment"
+                android:onClick="onClickPrivateComment"
+                android:layout_marginTop="20dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10sp"
+                    android:id="@+id/postprivateComment"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Allow private comment"
+                    />
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:id="@+id/postSettingsPrivateCommentCheckBox"
+                    android:checked="false"
+                    android:backgroundTint="@color/textContext"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="5dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/postprivateComment"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/textContext"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10sp"
+                    android:text="@string/private_comment_settings"
+                    android:maxWidth="300dp"
+                    />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10sp"
+                android:background="@color/lineBackground" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickRepeatAllPost"
+                android:id="@+id/privateCommentSetRepeat"
+
+                android:layout_marginTop="20dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10sp"
+                    android:id="@+id/postRepeatSet"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Always Repeat post"
+                    />
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:id="@+id/postSettingRepeatCheckBox"
+                    android:checked="false"
+                    android:backgroundTint="@color/textContext"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="5dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/postRepeatSet"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/textContext"
+                    android:layout_marginStart="10sp"
+                    android:text="@string/repeat_post_text"
+                    android:maxWidth="300dp"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickOnlyContactPost"
+                android:id="@+id/nonContactRepeat"
+
+                android:layout_marginTop="20dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10sp"
+                    android:id="@+id/nonContactRepeatText"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Show only contact post"
+                    />
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:id="@+id/nonContactRepeatCheckBox"
+                    android:checked="false"
+                    android:backgroundTint="@color/textContext"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="5dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nonContactRepeatText"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/textContext"
+                    android:layout_marginStart="10sp"
+                    android:text="@string/close_repeat"
+                    android:maxWidth="300dp"
+                    />
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:visibility="visible"
+                android:onClick="showDialog"
+                android:id="@+id/postDuration"
+                android:layout_marginTop="20dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10sp"
+                    android:id="@+id/postLifeSpan"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Change post duration"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/postLifeSpan"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10sp"
+                    android:textColor="@color/textContext"
+                    android:text="Changing duration  will make your post disappear before 24 hours"
+                    android:maxWidth="300dp"
+                    />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10sp"
+                android:background="@color/lineBackground" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textContext"
+                android:layout_marginTop="50dp"
+                android:text="@string/post_settings_info"
+                android:layout_marginStart="20dp"
+
+                />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

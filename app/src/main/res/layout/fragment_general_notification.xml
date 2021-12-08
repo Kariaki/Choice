@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kariaki.choice.UI.MainPage.Pages.Notifications.GeneralNotification">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"
+            android:orientation="horizontal"
+            android:id="@+id/infoHolder"
+            >
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:src="@drawable/network"
+                android:id="@+id/infoImage"
+
+                />
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/infoText"
+                android:text="You do not have any notifications yet"
+                android:textSize="20sp"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/textContext"
+                />
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:id="@+id/notificationList"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

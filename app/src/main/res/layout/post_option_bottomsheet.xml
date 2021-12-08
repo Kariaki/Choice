@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/optionbottomSheetContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:paddingBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/curveHolder"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:id="@+id/topHolder"
+            android:layout_width="50dp"
+            android:layout_height="5dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/round_background"
+            android:orientation="vertical"
+            android:layout_marginBottom="5dp"
+
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/mutePost"
+            android:background="@drawable/my_ripple"
+            android:orientation="horizontal"
+            android:layout_marginStart="10dp"
+            >
+            <ImageView
+                android:layout_width="25dp"
+
+                android:layout_height="30dp"
+                android:visibility="invisible"
+                android:src="@drawable/post_mute"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:id="@+id/mutePostText"
+                android:text="Mute"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/textColor"
+                android:layout_gravity="center_vertical"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/repost"
+
+            android:orientation="horizontal"
+            android:layout_marginStart="10dp"
+            >
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:visibility="invisible"
+                android:src="@drawable/new_reply_right"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Repost to contact"
+                android:textColor="@color/textColor"
+                android:layout_marginStart="5dp"
+                android:id="@+id/repostText"
+                android:layout_gravity="center_vertical"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/cancelRepeat"
+            android:orientation="horizontal"
+            android:layout_marginStart="10dp"
+            >
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:visibility="invisible"
+                android:src="@drawable/repeate"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Cancel Repeat"
+                android:textColor="@color/textColor"
+                android:id="@+id/cancelRepeatText"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center_vertical"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/commentPrivately"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:layout_marginStart="10dp"
+            >
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:visibility="invisible"
+                android:src="@drawable/comment_reply"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Comment privately"
+                android:textColor="@color/textColor"
+                android:id="@+id/commentPrivatelyText"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center_vertical"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/copyPost"
+            android:orientation="horizontal"
+            android:layout_marginStart="10dp"
+            >
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:visibility="invisible"
+                android:src="@drawable/copy_gray"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Copy post text"
+                android:textColor="@color/textColor"
+
+                android:id="@+id/copyPostText"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center_vertical"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:id="@+id/hidepost"
+            android:orientation="horizontal"
+            android:layout_marginStart="10dp"
+            >
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:visibility="invisible"
+                android:rotation="-5"
+                android:src="@drawable/cancel_light"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Hide post"
+                android:textColor="@color/textColor"
+                android:id="@+id/hidePostText"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center_vertical"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

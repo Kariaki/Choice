@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/notifactionToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:liftOnScroll="true"
+            android:background="@android:color/transparent"
+            android:visibility="visible"
+
+            app:contentInsetStart="0dp">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/notifactionTabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+
+                app:tabSelectedTextColor="@color/colorPrimary"
+                app:tabTextColor="@color/whiteGreen"
+                app:tabInlineLabel="true"
+                app:tabIndicatorGravity="bottom" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/notificationViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/notifactionToolbar" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

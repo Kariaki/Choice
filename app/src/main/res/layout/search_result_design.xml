@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="3dp"
+        android:id="@+id/inContactHolder"
+        >
+
+        <ImageView
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/in_contact"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Contact"
+            android:textSize="13sp"
+            android:textColor="@color/textContext"
+
+
+            />
+
+    </LinearLayout>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="40dp"
+        android:layout_below="@+id/inContactHolder"
+        android:layout_height="40dp"
+        android:id="@+id/userProfilePicture"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text=""
+        android:id="@+id/userListUserName"
+        android:layout_below="@+id/inContactHolder"
+        android:textColor="@color/textContext"
+        android:textSize="15dp"
+        android:layout_toEndOf="@+id/userProfilePicture"
+        android:layout_centerVertical="true"
+        />
+
+    <com.vanniktech.emoji.EmojiTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text=""
+        android:visibility="visible"
+        android:id="@+id/userListAbout"
+        android:lines="1"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/userListUserName"
+
+        android:textColor="@color/textContext"
+        android:textSize="13sp"
+        android:layout_toEndOf="@+id/userProfilePicture"
+
+        />
+
+</RelativeLayout>

@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/CameraRootlayout"
+    tools:context="com.kariaki.choice.UI.Camera.CameraFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Camera is still under development"
+        android:textColor="@color/textContext"
+        />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ><com.otaliastudios.cameraview.CameraView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cameraView"
+        />
+    </FrameLayout>
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/focusView"
+        android:visibility="invisible"
+        android:src="@drawable/camera_focus"
+        android:layout_centerInParent="true"
+
+        />
+    <ImageView
+        android:layout_width="35dp"
+        android:background="@drawable/round_icon_background"
+        android:src="@drawable/arrow_back"
+        android:layout_margin="20dp"
+        android:padding="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_height="35dp"
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/semi_transparent"
+        android:layout_margin="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/one"
+
+            />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="70dp"
+        android:layout_height="200dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/capturedHolder"
+        />
+    <com.agrawalsuneet.dotsloader.loaders.CircularDotsLoader
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:loader_animDur="100"
+        app:loader_bigCircleRadius="15dp"
+        android:layout_marginStart="5dp"
+        app:loader_circleRadius="2dp"
+        android:layout_below="@id/capturedHolder"
+        app:loader_defaultColor="@color/lineBackground"
+        app:loader_firstShadowColor="@color/colorPrimary"
+        app:loader_secondShadowColor="@color/lineBackground"
+        app:loader_selectedColor="@color/colorPrimary"
+        app:loader_showRunningShadow="true" />
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/capturesHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        >
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+
+            android:layout_gravity="bottom"
+            android:layout_marginStart="50dp"
+            android:background="@drawable/round_icon_background"
+            android:padding="7dp"
+            android:id="@+id/flashlight"
+            android:src="@drawable/flash_off" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+
+            android:id="@+id/capture"
+
+            android:background="@drawable/capture_button_background" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="50dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/switch_camera"
+
+            android:background="@drawable/round_icon_background"
+            android:padding="7dp"
+            android:src="@drawable/camera_switch" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userProfilePicture"
+        android:layout_width="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_height="50dp"/>
+
+    <TextView
+        android:id="@+id/userListUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@id/userProfilePicture"
+        android:text=""
+        android:layout_centerVertical="true"
+        android:textColor="@color/textContext"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/userListUserName"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="20dp"
+            android:id="@+id/viewIcon"
+            android:visibility="invisible"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:src="@drawable/view_eye" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/likeIcon"
+            android:visibility="invisible"
+            android:layout_marginEnd="40dp"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:src="@drawable/favoriteclose" />
+
+        <ImageView
+            android:id="@+id/commentIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+
+            android:layout_marginEnd="40dp"
+            android:visibility="gone"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:src="@drawable/chat" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

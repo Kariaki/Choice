@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+
+    android:paddingTop="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/memberProfilePicture"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/memberName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:text=""
+        android:textColor="@color/textContext"
+        android:layout_toEndOf="@id/memberProfilePicture"
+
+        android:textSize="15sp"
+
+        android:typeface="monospace" />
+    <com.vanniktech.emoji.EmojiTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/memberName"
+        android:text=""
+        android:id="@+id/about"
+        android:layout_alignStart="@id/memberName"
+        android:layout_marginTop="10dp"
+        />
+
+
+    <TextView
+        android:id="@+id/inviteMember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:padding="10sp"
+        android:textSize="17sp"
+        android:text="Invite"
+        android:textColor="@color/textContext"
+
+        />
+
+    <TextView
+        android:id="@+id/added"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:padding="10sp"
+        android:textSize="17sp"
+        android:visibility="invisible"
+        android:text="Sent"
+        android:textColor="@color/textContext"
+
+        />
+</RelativeLayout>

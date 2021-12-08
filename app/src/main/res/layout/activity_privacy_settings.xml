@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:id="@+id/privacySettingsRootView"
+    tools:context="com.kariaki.choice.UI.Settings.PrivacySettingsActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="always"
+        android:scrollbars="vertical"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="70dp"
+
+            >
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/otherUserProfileToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                app:contentInsetStart="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/my_ripple"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/ProfileBackButton"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:onClick="backPress"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="2dp"
+                        android:src="@drawable/colored_back_arrow" />
+
+                    <TextView
+                        android:id="@+id/otherUserLastSeen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_toEndOf="@+id/ProfileBackButton"
+                        android:text="@string/privacy_settings"
+                        android:textColor="@color/darkGreen" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/privacy_lock"
+                        android:layout_marginEnd="10sp"
+                        />
+                </RelativeLayout>
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="75dp"
+                android:background="@drawable/my_ripple"
+                android:id="@+id/privacySettingsMessageRequest"
+                android:onClick="checkReceiveMessageRequest"
+                android:layout_marginTop="20dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10sp"
+                    android:id="@+id/privacyMessageRequest"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Receive message Request"
+                    />
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:id="@+id/privacySettingsMessageRequestCheckBox"
+                    android:checked="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="5dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/privacyMessageRequest"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/textContext"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10sp"
+                    android:text="@string/message_request"
+                    android:maxWidth="300dp"
+                    />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/privacySearchSettings"
+                android:layout_height="75dp"
+                android:onClick="checkSearchOnlyMyContacts"
+                android:layout_marginTop="20dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10sp"
+                    android:id="@+id/privacySettingsa"
+                    android:textColor="@color/colorPrimary"
+                    android:text="@string/privacy_search"
+                    />
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:id="@+id/privacySearchCheckBox"
+                    android:checked="false"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="5dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/privacySettingsa"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/textContext"
+                    android:layout_marginStart="10sp"
+                    android:text="@string/privacy_search_description"
+                    android:maxWidth="300dp"
+                    />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:visibility="visible"
+                android:onClick="showDialog"
+                android:background="@drawable/my_ripple"
+                android:id="@+id/privacySettingsLastSeen"
+                android:layout_marginTop="20dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10sp"
+                    android:fontFamily="monospace"
+                    android:id="@+id/postLifeSpan"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Show my last seen"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/postLifeSpan"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="5dp"
+
+                    android:textColor="@color/textContext"
+                    android:layout_marginStart="10sp"
+                    android:text="Select who you want to see your online status"
+                    android:maxWidth="300dp"
+                    />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

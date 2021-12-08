@@ -1,0 +1,101 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mynotificationRoot"
+    android:layout_height="match_parent"
+    tools:context="com.kariaki.choice.UI.MainPage.Pages.Notifications.MyContent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:paddingStart="10dp"
+                android:paddingBottom="10dp"
+                android:paddingEnd="10dp"
+                android:background="@drawable/my_ripple"
+                android:paddingTop="15dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/newContentHolder"
+                >
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="43dp"
+                    android:background="@drawable/add_round_background"
+                    android:src="@drawable/add"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/newContentTextView"
+                    android:textSize="20dp"
+                    android:layout_marginStart="20dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:text="Add New Content"
+                    />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_below="@id/newContentHolder"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent"
+                android:id="@+id/myPostDashBoard"
+                />
+            <com.agrawalsuneet.dotsloader.loaders.BounceLoader
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:bounce_animDuration="1000"
+                app:bounce_ballColor="@color/colorPrimary"
+                android:id="@+id/bounceLoader"
+                app:bounce_ballRadius="15dp"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                app:bounce_shadowColor="@color/grayGreen"
+                app:bounce_showShadow="true" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="50dp"
+                android:visibility="invisible"
+                android:orientation="horizontal"
+                android:id="@+id/infoHolder"
+                >
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:src="@drawable/network"
+                    android:id="@+id/infoImage"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/infoText"
+
+                    android:textSize="15sp"
+                    android:layout_marginStart="17sp"
+                    android:text="You have not posted anything yet"
+
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/textContext"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

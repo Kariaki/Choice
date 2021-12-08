@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Camera"
+        android:icon="@drawable/camera"
+        app:showAsAction="always"
+        android:id="@+id/menuHome"
+        app:actionViewClass="android.widget.ImageButton"
+        />
+
+    <item
+        android:title="write text"
+        android:icon="@drawable/write_text"
+        android:id="@+id/notification"
+        app:actionViewClass="android.widget.ImageButton"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:title="settings"
+        android:icon="@drawable/settings"
+        app:actionViewClass="android.widget.ImageButton"
+        android:id="@+id/menuChat"
+        app:showAsAction="always"/>
+
+
+
+</menu>

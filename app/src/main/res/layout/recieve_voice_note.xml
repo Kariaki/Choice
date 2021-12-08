@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recieveVoiceNoteParent"
+    android:layout_marginBottom="5dp"
+    android:background="@android:color/transparent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/imageplaceholder"
+        android:scaleType="centerCrop"
+        android:layout_alignParentStart="true"
+        android:id="@+id/recieveVoiceNoteSenderImage"
+        android:layout_alignBottom="@+id/recieveCommentTextMessageContainer"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10sp"
+        android:layout_toEndOf="@+id/recieveCommentTextMessageContainer"
+        android:textSize="12sp"
+        android:visibility="gone"
+
+        android:id="@+id/voiceNoteTime"
+          android:textColor="@color/textContext"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/repliedholder"
+        android:visibility="gone"
+        android:layout_marginTop="3dp"
+        android:layout_below="@id/voiceNoteTime"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/replyBottomContainer"
+        >
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/reply_to_left"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textSize="12sp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textContext"
+
+            android:id="@+id/replied"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@+id/repliedholder"
+        android:id="@+id/reciveCommentReplyContainter"
+        android:layout_toEndOf="@+id/recieveVoiceNoteSenderImage"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/recieve_top_background"
+        >
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:visibility="gone"
+            android:scaleType="centerCrop"
+            android:id="@+id/repliedImagePreview"
+            android:src="@drawable/square_place_holder"
+            />
+
+
+        <com.vanniktech.emoji.EmojiTextView
+            android:layout_width="wrap_content"
+
+            android:layout_marginStart="10sp"
+            android:maxWidth="200dp"
+            android:text=""
+            android:maxLines="3"
+            android:id="@+id/messageContent"
+            android:layout_marginTop="5dp"
+            android:paddingEnd="10sp"
+            android:layout_height="wrap_content"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:visibility="gone"
+        android:id="@+id/replyBottomContainer"
+        android:layout_below="@+id/reciveCommentReplyContainter"
+        android:background="@drawable/recieve_bottom_background"
+        android:layout_alignEnd="@+id/reciveCommentReplyContainter"
+        android:layout_alignStart="@+id/reciveCommentReplyContainter"
+        />
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_marginStart="5dp"
+            android:layout_below="@+id/reciveCommentReplyContainter"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/receive_comment_background"
+
+            android:layout_toEndOf="@id/recieveVoiceNoteSenderImage"
+            android:id="@+id/recieveCommentTextMessageContainer"
+            android:layout_height="30dp"
+
+
+            >
+            <ImageView
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:visibility="visible"
+                android:layout_centerVertical="true"
+                android:id="@+id/recieveVoiceNotePlay"
+
+                android:src="@drawable/play_filled"
+                android:background="?android:selectableItemBackgroundBorderless"
+                />
+            <ProgressBar
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/voiceNoteDownloadProgressBar"
+                android:layout_centerVertical="true"
+                android:indeterminate="true"
+                android:padding="5dp"
+                style="@style/Widget.AppCompat.ProgressBar"
+                android:visibility="invisible"
+                android:layout_marginStart="10sp"
+
+                />
+            <ImageButton
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:src="@drawable/arrow_down"
+                android:layout_centerVertical="true"
+                android:id="@+id/fileDownloadButton"
+                android:visibility="invisible"
+                android:layout_marginStart="10sp"
+                 android:padding="3dp"
+                />
+
+                <ProgressBar
+                    android:layout_width="match_parent"
+
+                    android:thumb="@color/whiteGreen"
+                    android:layout_height="30dp"
+                    android:visibility="visible"
+                    android:paddingStart="5dp"
+                    android:progressDrawable="@drawable/custom_recieve_background"
+                    android:id="@+id/recieveVoiceNoteProgressBar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+
+
+                    />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:text="14:1"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/recieveVoiceNoteDuration"
+
+                android:textColor="@color/whiteGreen"
+                />
+        </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="12sp"
+
+        android:layout_marginStart="10dp"
+
+        android:visibility="visible"
+        android:textColor="@color/textContext"
+        android:fontFamily="monospace"
+        android:layout_below="@+id/recieveCommentTextMessageContainer"
+        android:layout_alignStart="@+id/recieveCommentTextMessageContainer"
+        android:id="@+id/recieveVoiceNoteSenderName"
+        android:layout_marginEnd="10dp"
+        />
+
+
+</RelativeLayout>

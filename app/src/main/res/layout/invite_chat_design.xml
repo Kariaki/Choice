@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/inviteChatUserProfilePicture"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/two" />
+
+    <ImageButton
+        android:id="@+id/removeInviteChatUser"
+        android:layout_width="20dp"
+        android:layout_height="21dp"
+
+        android:layout_below="@+id/inviteChatUserName"
+        android:layout_marginStart="35dp"
+        android:background="@drawable/round_background"
+        android:padding="5dp"
+        android:src="@drawable/cancel" />
+
+    <TextView
+        android:id="@+id/inviteChatUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/inviteChatUserProfilePicture"
+        android:maxWidth="75dp"
+        android:text="Tosam derek" />
+
+</RelativeLayout>

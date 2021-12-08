@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/textPostRootView"
+    tools:context="com.kariaki.choice.UI.MakePost.TextPost">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/creatTextPostToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+            <ImageView
+                android:id="@+id/textPostSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="openPostSettings"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10sp"
+                android:layout_centerVertical="true"
+                android:background="?android:selectableItemBackgroundBorderless"
+                android:src="@drawable/settings"
+                android:visibility="visible" />
+
+
+            <ImageButton
+
+                android:id="@+id/textPostBackButton"
+
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:layout_centerVertical="true"
+                android:background="?android:selectableItemBackgroundBorderless"
+                android:onClick="textPostBackPress"
+                android:padding="10dp"
+                android:src="@drawable/colored_back_arrow"
+
+                />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+
+        android:layout_below="@+id/captionHolder"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="50dp"
+        android:textColor="@android:color/white"
+        android:id="@+id/finishTextPostButton"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/squarebackgroun_one"
+        android:onClick="finishClick"
+        android:shadowColor="@android:color/transparent"
+        android:text="post"
+        android:visibility="visible"
+        app:layout_dodgeInsetEdges="bottom"
+        app:layout_insetEdge="top"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/captionHolder"
+        android:text="Repeat this post"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/repeatTextPostinfo"
+        android:layout_alignTop="@+id/repeatTextPost"
+        />
+    <ToggleButton
+        android:id="@+id/repeatTextPost"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="10dp"
+        android:layout_alignTop="@+id/finishTextPostButton"
+        android:layout_below="@id/captionHolder"
+        android:layout_toEndOf="@+id/repeatTextPostinfo"
+        android:layout_margin="10dp"
+        android:background="@drawable/loop_state"
+        android:textOff=""
+        android:textOn="" />
+
+    <RelativeLayout
+        android:id="@+id/captionHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/creatTextPostToolbar"
+        android:minHeight="100dp">
+
+
+        <com.vanniktech.emoji.EmojiEditText
+            android:id="@+id/writeTextPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:padding="10dp"
+            android:background="@drawable/background"
+            android:gravity="center_horizontal|center_vertical"
+            android:hint="Write Something"
+
+            android:minHeight="100dp"
+
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="20dp"
+
+            app:layout_dodgeInsetEdges="bottom" />
+
+        <ImageButton
+            android:id="@+id/textPostKeyboard"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/my_ripple"
+            android:src="@drawable/keyboard"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/textPostEmoji"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/my_ripple"
+            android:src="@drawable/emoji2"
+            app:layout_dodgeInsetEdges="bottom"
+            app:layout_insetEdge="top" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

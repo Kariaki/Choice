@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/send_message_background"
+        android:layout_height="wrap_content"
+        >
+     <androidx.cardview.widget.CardView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/postOwnerImage"
+         android:layout_alignParentEnd="true"
+         android:id="@+id/sharedPostImage"
+         app:cardCornerRadius="10dp"
+         android:layout_margin="10dp"
+         >
+         <ImageView
+             android:layout_width="match_parent"
+
+             android:src="@drawable/two"
+             android:scaleType="centerCrop"
+             android:id="@+id/sendsharePostAsMessageImage"
+
+             android:layout_height="150dp"
+
+             />
+     </androidx.cardview.widget.CardView>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/postOwnerImage"
+        android:layout_alignStart="@+id/sharedPostImage"
+        android:src="@drawable/two"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/postOwnerName"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/postOwnerImage"
+        android:layout_marginStart="10dp"
+        android:text="Kariaki Blessed"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sharedPostImage"
+        android:layout_margin="3dp"
+        android:textSize="20dp"
+        android:id="@+id/sharePostCaption"
+        android:textColor="@android:color/white"
+        android:text="I have no complain yet"
+        android:layout_alignStart="@id/sharedPostImage"
+        />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title=""
+        android:icon="@drawable/house"
+        app:showAsAction="always"
+        android:id="@+id/menuHome"
+        app:actionViewClass="android.widget.ImageButton"
+        />
+
+    <item
+        android:title=""
+        android:icon="@drawable/bell"
+        android:id="@+id/notification"
+        app:actionViewClass="android.widget.ImageButton"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:title=""
+        android:icon="@drawable/chat"
+        app:actionViewClass="android.widget.ImageButton"
+        android:id="@+id/menuChat"
+        app:showAsAction="always"/>
+
+
+
+
+    <item
+        android:title=""
+        android:id="@+id/empty"
+        app:actionViewClass="android.widget.ImageButton"
+
+        app:showAsAction="always"/>
+    <item
+        android:title=""
+        android:icon="@drawable/explore"
+        app:actionViewClass="android.widget.ImageButton"
+        android:id="@+id/search"
+        app:showAsAction="always"/>
+
+
+</menu>

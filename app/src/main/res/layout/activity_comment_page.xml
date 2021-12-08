@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.kariaki.choice.UI.Comment.CommentPage">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whiteGreen"
+        android:id="@+id/commentPageContainer"
+        >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/commentPageToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:visibility="visible"
+        android:layout_alignParentTop="true"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/commentPageBackButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:onClick="backPress"
+                android:background="?android:selectableItemBackgroundBorderless"
+                android:src="@drawable/colored_back_arrow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:id="@+id/commentPageText"
+                android:layout_toEndOf="@+id/commentPageBackButton"
+                android:text="Comments"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_below="@+id/commentPageToolbar"
+            android:layout_above="@+id/replyHolder"
+            android:id="@+id/backgroundLayout"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:layout_alignParentTop="true"
+                    android:id="@+id/postHolder"
+                    />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/commentMessagesContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/postHolder"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:layout_alignParentBottom="true"
+
+                    />
+
+                <ProgressBar
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/showLoading"
+
+                    android:visibility="visible"
+                    android:layout_below="@+id/postHolder"
+                    android:layout_centerHorizontal="true"
+
+                    />
+
+            </RelativeLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+
+
+    <RelativeLayout
+        android:id="@+id/replyHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editCommentBottom"
+        android:background="@color/whiteGreen"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/replyContentHolder"
+            android:visibility="visible">
+
+            <com.vanniktech.emoji.EmojiTextView
+                android:id="@+id/replyMessageHolder"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="35dp"
+                android:layout_toStartOf="@+id/replyCancelButton"
+                android:gravity="start"
+                android:lines="1"
+                android:text=""
+
+                android:textColor="@color/textContext"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/replyPhotoPreview"
+                android:layout_width="20dp"
+                android:visibility="gone"
+                android:layout_height="match_parent"
+                android:layout_toStartOf="@+id/replyCancelButton"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/cancel_background"
+                android:src="@drawable/square_place_holder" />
+
+            <ImageView
+                android:id="@+id/replyCancelButton"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+
+                android:background="@drawable/cancel_background"
+                android:src="@drawable/cancel" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+        <Chronometer
+            android:id="@+id/commentVoiceNoteCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/editCommentBottom"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/textContext"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:visibility="invisible"
+
+            />
+
+    <RelativeLayout
+        android:id="@+id/editCommentBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@android:color/transparent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:id="@+id/line"
+            android:background="@color/colorPrimary"
+            />
+        <ImageView
+            android:id="@+id/commentPageCamera"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:background="?android:selectableItemBackgroundBorderless"
+
+            android:padding="5dp"
+            android:src="@drawable/camera" />
+
+        <ImageButton
+            android:id="@+id/commentPageExtension"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/commentEditTextArea"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/commentPageCamera"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:padding="5dp"
+            android:visibility="gone"
+            android:src="@drawable/comment_photo"
+
+            />
+
+        <RelativeLayout
+            android:id="@+id/commentEditTextArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@+id/line"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@id/commentPageExtension">
+
+            <TextView
+                android:id="@+id/privateCommentNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:text="Long click send, to comment privately"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="10dp"
+                android:visibility="gone" />
+
+
+
+            <com.vanniktech.emoji.EmojiEditText
+                android:id="@+id/write_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/privateCommentNote"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@+id/commentPageEmoji"
+                android:background="@drawable/background"
+                android:hint="comment here"
+                android:maxHeight="130dp"
+                android:textColorHint="@color/textContext"
+                android:minHeight="40dp"
+                android:textColor="@color/whiteGreen"
+                android:text=""
+                android:paddingStart="10sp"
+                android:paddingTop="5dp"
+
+                android:paddingBottom="5dp"
+                android:scrollbarStyle="outsideInset"
+                android:scrollbars="vertical"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/commentPageSend"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/write_comment"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="?android:selectableItemBackgroundBorderless"
+
+                android:padding="5dp"
+                android:onClick="sendComment"
+
+                android:src="@drawable/send1"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/commentPageEmoji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/write_comment"
+                android:layout_marginEnd="3dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toStartOf="@+id/commentPageSend"
+                android:background="?android:selectableItemBackgroundBorderless"
+                android:padding="5dp"
+                android:src="@drawable/emoji_tint" />
+
+            <ImageView
+                android:id="@+id/commentPageKeyboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/write_comment"
+                android:layout_marginEnd="3dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toStartOf="@+id/commentPageSend"
+                android:background="?android:selectableItemBackgroundBorderless"
+                android:padding="5dp"
+                android:src="@drawable/keyboard"
+                android:visibility="invisible" />
+
+
+            <ImageView
+                android:id="@+id/commentPageMic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/write_comment"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="5dp"
+                android:visibility="visible"
+                android:layout_marginBottom="5dp"
+                android:background="?android:selectableItemBackgroundBorderless"
+                android:padding="5dp"
+                android:src="@drawable/send_round" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="75dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/micFloat"
+        android:layout_alignBottom="@+id/editCommentBottom"
+        android:visibility="invisible"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_height="75dp"
+        />
+
+
+</RelativeLayout>
+</FrameLayout>

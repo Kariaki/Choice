@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profilePageRootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kariaki.choice.UI.Profiles.SettingsPage"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/ProfileToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ProfileBackButton"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+
+                android:layout_marginStart="2dp"
+                android:onClick="backPress"
+                android:src="@drawable/colored_back_arrow" />
+
+            <TextView
+                android:id="@+id/otherUserLastSeen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/ProfileBackButton"
+                android:text="Settings"
+                android:textSize="17sp" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ProfileToolbar"
+        android:overScrollMode="always"
+
+        android:scrollbars="vertical"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="70dp"
+
+            >
+
+
+            <RelativeLayout
+                android:id="@+id/darkMode"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10sp"
+
+                android:background="@drawable/my_ripple"
+                android:onClick="changeTheme">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="20dp"
+                        android:padding="5dp"
+                        android:rotation="20"
+                        android:src="@drawable/dark_mode" />
+
+                    <TextView
+                        android:id="@+id/darkModeText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="10dp"
+                        android:maxWidth="200dp"
+                        android:maxHeight="50dp"
+                        android:text="Dark Mode"
+                        android:textColor="#404040"
+                        android:textSize="16sp"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <Switch
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:track="@drawable/round_background"
+                    android:checked="false"
+                    android:id="@+id/darkModeSwitch"
+                    android:thumb="@drawable/switch_thumb"
+                    android:layout_marginEnd="20dp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/chatSetting"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/my_ripple"
+                android:onClick="openChatSettings">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="20dp"
+
+                    android:padding="5dp"
+                    android:src="@drawable/chat" />
+
+                <TextView
+                    android:id="@+id/chatSettingsText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:maxWidth="200dp"
+                    android:maxHeight="50dp"
+                    android:text="@string/chat_settings"
+                    android:textColor="#404040"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/postSettings"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/my_ripple"
+                android:onClick="openPostSettings">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="20dp"
+                    android:padding="5dp"
+                    android:src="@drawable/post_icon" />
+
+                <TextView
+                    android:id="@+id/postSettingsText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:maxWidth="200dp"
+                    android:maxHeight="50dp"
+                    android:text="@string/post_settings"
+                    android:textColor="#404040"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/notificationSettings"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/my_ripple"
+                android:onClick="openNotificationSettings">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="20dp"
+                    android:padding="5dp"
+                    android:src="@drawable/notification_open" />
+
+                <TextView
+                    android:id="@+id/notificationSettingsText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:maxWidth="200dp"
+                    android:maxHeight="50dp"
+                    android:text="Notification and Sound"
+                    android:textColor="#404040"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/privacySettings"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/my_ripple"
+                android:onClick="openPrivacySettings">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="20dp"
+                    android:padding="5dp"
+                    android:src="@drawable/privacy" />
+
+                <TextView
+                    android:id="@+id/privacySettingsText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:maxWidth="200dp"
+                    android:maxHeight="50dp"
+                    android:text="@string/privacy_settings"
+                    android:textColor="#404040"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/accountSettings"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/my_ripple"
+                android:onClick="openAccountSettings">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="20dp"
+                    android:padding="5dp"
+                    android:src="@drawable/person1" />
+
+                <TextView
+                    android:id="@+id/accountSettingsText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:maxWidth="200dp"
+                    android:maxHeight="50dp"
+                    android:text="Account management"
+                    android:textColor="#404040"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

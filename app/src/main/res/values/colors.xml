@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#7D13DA</color>15CD9F
+    <color name="colorPrimaryDark">#EE1C2220</color>
+    <color name="colorAccent">#7151a9</color>
+    <color name="lineBackground">#6ABFFBEC</color>
+    <color name="lineBackground2">#6AB9CFCA</color>
+    <color name="colorE">#c4c4c4</color>
+    <color name="whiteGreen">#FFFF</color>FBEAEAEA
+    <color name="darkGreen">#100D12</color> 010907
+    <color name="message_background">#17A581</color>0e8869
+    <color name="holder_backgroun">#109f7b</color>
+
+    <color name="line_color1">#118D57</color>
+    <color name="grayGreen">#1C2220</color>
+    <color name="whiteRed">#4CFBBFC8</color>
+    <color name="textContext">#6c7674</color>
+
+    <color name="textHeaderColor">#585C5B</color>
+    <color name="textContent1">#A0A8A8</color>
+    <color name="textContent2">#808888</color>
+    <color name="lightsOut">#011C16</color>
+    <color name="gray">#989C94</color>
+    <color name="replycolor">#131B19</color>
+    <color name="small_background_color">#4CBFFBEC</color>
+
+    <color name="ripple_color">#D9BFFBEC</color>
+
+
+    <color name="send_reply">#B20E8869</color>
+
+    <color name="replyRecieve">#DA9DDDD4</color>
+
+    <color name="receive_message">#C4CAC9</color>
+    <color name="replyReceiveDark">#4CBFFBEC</color>
+
+    <color name="textColor">#404040</color>
+
+    <color name="send_comment_background">#F5886DB8</color>
+
+    <color name="send_comment_reply">#E8AD9DC8</color>FC7BA89D
+    <color name="choice_blue">#4AA6B8</color>
+    <color name="postDark">#9F1C201F</color>
+    <color name="notificationColor">#4C98C3B8</color>
+    <color name="dialogColor">#35000000</color>
+
+    <color name="semi_transparent">#C6000000</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="dialog_light">#66BAD6CD</color>
+    <color name="comment_background_color">#297151A9</color>280F6852
+</resources>

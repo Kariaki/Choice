@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="700dp"
+    android:background="@android:color/transparent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:background="#98CACA"
+            />
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/curveHolder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bottom_sheet_curve">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/mainActivityToolbar"
+                android:layout_width="match_parent"
+
+                android:layout_height="50dp"
+
+                android:layout_margin="5dp"
+                app:contentInsetStart="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:id="@+id/topHolder"
+                        android:layout_width="50dp"
+                        android:layout_height="5dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/round_background"
+                        android:orientation="vertical"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/yourContact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/textContext"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/contacts"
+
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:typeface="monospace" />
+
+                    <TextView
+                        android:id="@+id/contactCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@id/yourContact"
+                        android:textColor="@color/textContext"
+
+                        android:textSize="20sp"
+
+
+                        android:visibility="visible" />
+
+
+                </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_below="@+id/mainActivityToolbar"
+                android:layout_above="@+id/bigChangeHolder"
+
+                android:layout_height="match_parent"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:id="@+id/searchContacts"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginStart="5dp"
+                        android:paddingStart="15sp"
+                        android:paddingEnd="15dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textColorHint="@color/textContext"
+                        android:paddingTop="5dp"
+                        android:textSize="15sp"
+                        android:paddingBottom="5dp"
+
+                        android:hint="Search Contacts"
+                        android:background="@drawable/search_background"
+                        />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/Contactlist"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/searchContacts"
+
+                        android:layout_marginBottom="5dp"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+            <ProgressBar
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/contactLoading"
+                android:visibility="invisible"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+
+                android:onClick="refreshContact"
+                android:id="@+id/refresher"
+                android:visibility="invisible"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textContext"
+                    android:textSize="20dp"
+                    android:id="@+id/refreshText"
+                    android:text="Click to refresh"
+                    />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/bigChangeHolder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/transparent"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/changeHolder"
+                    android:layout_width="wrap_content"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+
+                        >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <ImageView
+                                android:id="@+id/contactFriendsNewGroupChat"
+                                android:layout_width="40dp"
+
+                                android:layout_height="40dp"
+                                android:layout_gravity="center_horizontal"
+
+
+                                android:padding="5dp"
+
+                                android:src="@drawable/another_group" />
+
+                            <TextView
+                                android:id="@+id/createGroupChatText"
+                                android:layout_width="wrap_content"
+
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/textContext"
+                                android:text="Group chat"
+                                android:layout_gravity="center_horizontal"
+
+                                android:textSize="12sp"
+
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginStart="50dp"
+                            >
+
+                            <ImageView
+
+                                android:id="@+id/contactFriendsGroupMessage"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+
+                                android:padding="7dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/colored_message_box" />
+
+                            <TextView
+                                android:id="@+id/broadCastText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/textContext"
+                                android:layout_gravity="center_horizontal"
+                                android:text="BroadCast"
+                                android:textSize="12sp"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="50dp"
+                            android:orientation="vertical"
+                            >
+
+                            <ImageView
+                                android:id="@+id/contactFriendsChatSettings"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+
+                                android:layout_gravity="center_horizontal"
+                                android:padding="5dp"
+                                android:src="@drawable/settings" />
+
+
+
+                            <TextView
+                                android:id="@+id/chatSettingsText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginEnd="3dp"
+                                android:textColor="@color/textContext"
+
+                                android:text="Chat Settings"
+                                android:textSize="12sp" />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/contactFriendsProcessButton"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentEnd="true"
+
+                    android:layout_gravity="start"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/small_menu_button_background"
+                    android:gravity="start"
+                    android:padding="5dp"
+                    android:visibility="invisible"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/send1" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/contactFriendsCancelProcess"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="start"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/cancel_background"
+                    android:gravity="start"
+                    android:padding="5dp"
+                    android:visibility="invisible"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/cancel" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+</RelativeLayout>
+

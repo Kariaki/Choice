@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kariaki.choice.UI.RegistrationAndLogin.RegisterUser">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:id="@+id/toolbar"
+        android:visibility="gone"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/holder"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/imageplaceholder"
+            android:layout_marginTop="50dp"
+            android:id="@+id/newProfileImage"
+
+            />
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignBottom="@id/newProfileImage"
+            android:src="@drawable/change_photo"
+
+            android:padding="15dp"
+
+            android:id="@+id/previewImage"
+            android:layout_alignEnd="@+id/newProfileImage"
+
+
+            android:background="@drawable/color_background"
+            />
+        <ProgressBar
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/progress"
+        android:visibility="invisible"
+
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+    </RelativeLayout>
+
+
+
+    <EditText
+        android:layout_width="275dp"
+        android:layout_height="40dp"
+        android:id="@+id/chooseName"
+        android:layout_marginEnd="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/holder"
+        android:textColorHint="@color/colorPrimary"
+        android:paddingStart="25dp"
+        android:layout_marginTop="90dp"
+
+        android:maxLength="15"
+        android:background="@drawable/view_all_profile_background"
+
+        android:hint="choose a username"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chooseName"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/limitCheck"
+
+        android:layout_marginEnd="15dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textContext"
+        android:text="optional"
+        android:textSize="12sp"
+        android:layout_marginTop="25dp"
+        android:layout_alignStart="@+id/chooseDisplayName"
+        android:layout_below="@+id/limitCheck"
+        android:id="@+id/optional"
+        />
+    <EditText
+        android:layout_width="275dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/chooseDisplayName"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="25dp"
+        android:layout_marginTop="5dp"
+        android:textColorHint="@color/colorPrimary"
+        android:layout_below="@+id/optional"
+        android:maxLength="15"
+        android:background="@drawable/view_all_profile_background"
+        android:hint="set adisplay name"
+        android:layout_marginBottom="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/chooseName"
+        android:layout_below="@+id/chooseName"
+        android:id="@+id/errorText"
+        />
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:onClick="finishregisteration"
+        android:background="@drawable/button_background_stroke"
+        android:layout_below="@+id/chooseDisplayName"
+        android:layout_centerHorizontal="true"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorPrimary"
+
+            android:text="Continue"
+            />
+
+    </RelativeLayout>
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/errorText"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_background_stroke"
+        android:visibility="invisible"
+        android:layout_marginBottom="50dp"
+        android:id="@+id/finishProcess"
+        android:textColor="@color/textColor"
+        android:layout_alignStart="@+id/errorText"
+        android:layout_marginEnd="20dp"
+
+        android:text="Finish"
+        android:onClick="finishregisteration"
+        />
+
+
+</RelativeLayout>

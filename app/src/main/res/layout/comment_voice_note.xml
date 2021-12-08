@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/my_ripple"
+    android:paddingBottom="5dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/repliedholder"
+        android:visibility="visible"
+        android:layout_marginStart="10dp"
+
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/reply_to_left"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginStart="5dp"
+            android:id="@+id/replier"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textContext"
+            android:text="replied ebilate"
+            />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/comment_design"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/senderImage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/two" />
+
+        <RelativeLayout
+            android:id="@+id/textHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+
+            android:layout_toEndOf="@id/senderImage"
+            android:paddingBottom="5dp"
+            android:minHeight="50dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/repliedTop"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_below="@+id/senderName"
+                android:visibility="gone"
+                android:background="#4164A395"
+                android:paddingStart="2dp"
+                android:paddingEnd="2dp"
+                >
+                <View
+                    android:layout_width="3dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/repliedText"
+                    android:layout_alignBottom="@+id/repliedText"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:id="@+id/starter"
+
+
+                    />
+                <com.vanniktech.emoji.EmojiTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/starter"
+                    android:layout_marginStart="3dp"
+
+                    android:textColor="@color/textColor"
+                    android:id="@+id/repliedText"
+                    android:maxLines="4"
+                    android:textSize="13sp"
+                    android:padding="5dp"
+                    android:text="Kariaki said it last night that he saw you the other day and you snubs him someow i wonder why"
+                    />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/play_filled"
+                android:layout_marginTop="10dp"
+                android:id="@+id/playCommentVoiceNote"
+                android:layout_centerVertical="true"
+                />
+            <ProgressBar
+                android:id="@+id/commentText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:progress="100"
+                android:layout_toEndOf="@+id/playCommentVoiceNote"
+
+                android:layout_below="@id/repliedTop"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_marginTop="5dp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:id="@+id/progressDuration"
+
+                android:layout_below="@id/commentText"
+                android:layout_alignTop="@id/commentTime"
+                android:layout_marginStart="50dp"
+                android:textColor="@color/textContext"
+                android:text="1:30"
+                android:layout_alignBottom="@id/commentTime"
+                />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/commentText"
+                android:layout_alignTop="@id/commentTime"
+                android:layout_alignBottom="@id/commentTime"
+                android:layout_marginEnd="20dp"
+                android:layout_toStartOf="@+id/commentTime"
+                android:text="reply"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:id="@+id/replyClick"
+
+                android:textColor="@color/textContext"
+                android:textSize="12sp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/commentTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/commentText"
+                android:layout_alignParentEnd="true"
+                android:text="15hrs"
+                android:textColor="@color/textContext"
+                android:textSize="12sp"
+                android:layout_marginEnd="5dp"
+                android:textStyle="bold" />
+
+            <com.vanniktech.emoji.EmojiTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+
+                android:id="@+id/senderName"
+                android:text="Kariaki ebilate"
+                android:textColor="@color/textContext"
+                android:textSize="15sp"
+
+                />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/textHolder"
+            android:layout_marginStart="20dp"
+            android:visibility="gone"
+            android:background="@color/lineBackground" />
+
+    </RelativeLayout>
+</LinearLayout>

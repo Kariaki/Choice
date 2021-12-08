@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dashBoardSinglePostRoot"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/viewsCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/textContext"
+                android:textSize="10sp"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="160dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+
+            android:id="@+id/dashBoardPostImagePreview"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:id="@+id/background"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/activity_gradient"
+
+            />
+
+        <RelativeLayout
+            android:id="@+id/dashboardSinglePostNotificationCountHolder"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/color_background"
+            android:minWidth="23dp"
+            android:minHeight="23dp"
+            android:padding="5dp"
+            android:visibility="invisible"
+
+            >
+
+            <TextView
+                android:id="@+id/dashBoardSinglePostNotificationCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+
+                android:textColor="@color/whiteGreen"
+                android:textSize="17dp" />
+
+        </RelativeLayout>
+
+        <com.vanniktech.emoji.EmojiTextView
+
+            android:id="@+id/dashBoardPostCaption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/background"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="10dp"
+            android:lines="3"
+            android:text="@string/choice_writeUp"
+
+            android:textColor="@color/whiteGreen"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:orientation="vertical"
+            android:paddingRight="5dp"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="2dp"
+                android:src="@drawable/heart1" />
+
+            <TextView
+                android:id="@+id/dashBoardSinglePostLikeCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center_horizontal"
+
+                android:layout_marginBottom="3dp"
+
+                android:textColor="@color/whiteGreen"
+
+                android:textSize="12dp"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_horizontal"
+
+                android:layout_marginBottom="2dp"
+                android:src="@drawable/new_circular_comment_tint" />
+
+            <TextView
+                android:id="@+id/dashBoardSinglePostCommentCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+
+                android:textColor="@color/whiteGreen"
+
+                android:textSize="12sp"
+
+                android:visibility="visible"
+
+                />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/dashboardSinglePostDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="5dp"
+            android:text="Yesterday 4:14"
+            android:textColor="@color/whiteGreen"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/dashBoardDeletePost"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+
+            android:padding="3dp"
+            android:src="@drawable/more_horizontal" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

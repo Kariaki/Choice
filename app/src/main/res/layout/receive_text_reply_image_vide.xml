@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/recieveMessageSenderImage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_alignBottom="@+id/recieveCommentTextMessageContainer"
+        android:layout_alignParentStart="true"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/repliedholder"
+        android:visibility="gone"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/replyBottomContainer"
+        >
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/reply_to_left"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textSize="12dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textContext"
+            android:text="replied kariaki"
+            android:id="@+id/replied"
+            />
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+
+        android:background="@drawable/recieve_top_background"
+
+        android:visibility="visible"
+        android:id="@+id/replyBottomContainer"
+        android:layout_below="@+id/repliedholder"
+        android:layout_toEndOf="@+id/recieveMessageSenderImage"
+        android:layout_marginStart="10dp"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:id="@+id/repliedImagePreview"
+            android:src="@drawable/square_place_holder"
+            />
+
+    </FrameLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:visibility="visible"
+        android:id="@+id/replyTopContainer"
+        android:layout_below="@+id/replyBottomContainer"
+        android:background="@drawable/recieve_bottom_background"
+        android:layout_alignEnd="@+id/replyBottomContainer"
+        android:layout_alignStart="@+id/replyBottomContainer"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/TextnameHolder"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@+id/recieveCommentTextMessageContainer"
+        android:layout_alignStart="@+id/recieveCommentTextMessageContainer"
+        android:padding="5dp"
+
+        >
+
+        <TextView
+            android:id="@+id/recieveCommentSenderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+
+            android:textSize="10sp"
+            android:visibility="visible"
+
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/recieveCommentTextMessageContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/replyBottomContainer"
+
+        android:layout_marginStart="5dp"
+
+        android:layout_toEndOf="@id/recieveMessageSenderImage"
+        android:background="@drawable/recieve_message_text_background"
+
+        android:paddingStart="10dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="5dp"
+
+        >
+
+        <com.vanniktech.emoji.EmojiTextView
+            android:id="@+id/recieveMessageMessage"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginEnd="10dp"
+
+            android:minHeight="15dp"
+            android:layout_marginStart="5dp"
+            android:paddingStart="3dp"
+            android:layout_toEndOf="@+id/receiveMessaageTextTime"
+            android:text="sent from a good book"
+            android:paddingTop="5dp"
+            android:maxWidth="200dp"
+
+            android:textSize="15sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="20:20"
+            android:textSize="12sp"
+            android:visibility="gone"
+            android:textColor="@color/whiteGreen"
+            android:layout_marginStart="3dp"
+            android:layout_alignParentStart="true"
+            android:id="@+id/receiveMessaageTextTime"
+
+            android:layout_alignBottom="@id/recieveMessageMessage"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

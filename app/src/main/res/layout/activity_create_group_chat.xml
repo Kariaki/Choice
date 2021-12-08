@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/groupChatRootView"
+    tools:context="com.kariaki.choice.UI.GroupChat.CreateGroupChat">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:contentInsetStart="0dp"
+        android:id="@+id/createGroupChatToolbar"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <ImageButton
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:id="@+id/createGroupChatBackbutton"
+                android:layout_marginStart="5dp"
+                android:background="?android:selectableItemBackgroundBorderless"
+                android:layout_alignParentStart="true"
+                android:onClick="backButtonPress"
+                android:layout_centerVertical="true"
+                android:src="@drawable/chat_back"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_toEndOf="@+id/createGroupChatBackbutton"
+                android:layout_marginStart="5dp"
+                android:text="New Group Chat"
+                android:id="@+id/groupChatText"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/createGroupChatToolbar"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <RelativeLayout
+                android:id="@+id/imageViewHOlder"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+
+                android:layout_margin="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/groupChatProfilePicture"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+
+                    android:onClick="pickImage" />
+
+                <RelativeLayout
+                    android:id="@+id/changeGroupIcon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/color_background"
+                    android:onClick="pickImage">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/new_camera" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+            <EditText
+                android:id="@+id/GroupChatName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/textContext"
+                android:layout_alignBottom="@+id/imageViewHOlder"
+                android:layout_marginBottom="20dp"
+                android:layout_toEndOf="@+id/imageViewHOlder"
+                android:hint="Group Name" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/addedMembersInfo"
+                android:maxWidth="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:layout_below="@id/GroupChatName"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addedMembersInfo"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/textContext"
+                android:id="@+id/selectedmemberTextview"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="20dp"
+                android:text="selected members "
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/currentlyAddedMemberList"
+                android:layout_below="@+id/selectedmemberTextview"
+                android:layout_marginTop="10dp"
+                />
+
+            <RelativeLayout
+                android:id="@+id/createGroupChatSendButton"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:outlineSpotShadowColor="@android:color/darker_gray"
+                android:layout_alignTop="@id/addedMembersInfo"
+                android:layout_gravity="start"
+                android:layout_marginStart="20dp"
+                android:onClick="createNewGroupChat"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/send_group_background"
+                android:gravity="start"
+                android:padding="5dp"
+                android:visibility="visible"
+
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/send1" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

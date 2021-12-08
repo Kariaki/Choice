@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kariaki.choice">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name=".Choice"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/app_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".UI.RegistrationAndLogin.InputPhoneNumber" />
+        <activity android:name=".UI.RegistrationAndLogin.AuthenticationPage" />
+
+        <service android:name=".Notification.PushNotificationService" />
+
+        <activity android:name=".DatabaseTest.TestPage" />
+        <activity android:name=".UI.Profiles.EditAboutPage" />
+        <activity android:name=".UI.Profiles.EditProfilePage" />
+        <activity android:name=".UI.Chat.ChatVideoViewer" />
+        <activity
+            android:name=".UI.Chat.ImageViewer"
+            android:theme="@style/DialogTheme" />
+        <activity
+            android:name=".UI.Chat.ChatPage"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".UI.Profiles.SocialActivities.SocialActivity" />
+        <activity android:name=".UI.Settings.AccountSettings" />
+        <activity android:name=".UI.Settings.NotificationSettings" />
+        <activity
+            android:name=".UI.Comment.CommentPage"
+            android:theme="@style/MyThemeNoActionBarSlide" />
+        <activity android:name=".UI.Profiles.ViewProfilePicture" />
+        <activity android:name=".UI.Post.Viewer.PostVideoViewer" />
+        <activity android:name=".UI.Post.Viewer.PostImageViewer" />
+        <activity android:name=".UI.Settings.ChatSettingsActivity" />
+        <activity android:name=".UI.Settings.PrivacySettingsActivity" />
+        <activity android:name=".UI.Profiles.SettingsPage" />
+        <activity android:name=".UI.MakePost.VideoPost" />
+        <activity android:name=".UI.MakePost.FinishPost" />
+        <activity android:name=".UI.MakePost.ImagePost" />
+        <activity android:name=".UI.Comment.DragDismiss" />
+        <activity android:name=".UI.GroupChat.CreateGroupChat" />
+        <activity android:name=".UI.GroupChat.GroupChatMembers" />
+        <activity android:name=".UI.GroupChat.GroupChatProfile" />
+        <activity android:name=".UI.GroupChat.GroupEditMembersOrAdmin" />
+        <activity
+            android:name=".UI.Profiles.SocialProfile"
+            android:theme="@style/MyThemeNoActionBarSlide" />
+        <activity android:name=".UI.Settings.PostSettings" />
+        <activity android:name=".UI.MakePost.TextPost" />
+        <activity android:name=".UI.RegistrationAndLogin.RegisterUser" />
+        <activity android:name=".UI.MainPage.SearchPage" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".LaunchPage"
+            android:theme="@style/MyThemeNoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

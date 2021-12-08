@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+    <com.vanniktech.emoji.EmojiTextView
+        android:id="@+id/sendPrivateCommentHeader"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/reciveCommentReplyContainter"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="3dp"
+        android:maxWidth="120dp"
+        android:text="Your post *"
+        android:textColor="@color/textContext" />
+
+    <RelativeLayout
+        android:id="@+id/reciveCommentReplyContainter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sendPrivateCommentHeader"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="7dp"
+        android:background="@drawable/private_comment_message"
+
+        android:paddingStart="5dp"
+        android:paddingEnd="10dp"
+        android:visibility="visible">
+
+        <com.vanniktech.emoji.EmojiTextView
+            android:id="@+id/sendPrivateCommentPostCaption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="3dp"
+            android:maxWidth="150dp"
+
+            android:maxLines="3"
+            android:minWidth="120dp"
+            android:textSize="14sp"
+            android:text="hello go"
+            android:textColor="@color/whiteGreen" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/reciveCommentReplyContainter"
+        android:layout_alignStart="@+id/reciveCommentReplyContainter"
+        android:layout_alignEnd="@+id/reciveCommentReplyContainter"
+
+        android:background="@drawable/under_background"
+        android:visibility="visible"
+
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/recievePrivateCommentMessageContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reciveCommentReplyContainter"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/send_comment_background"
+        android:paddingTop="5dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="5dp"
+        android:visibility="visible"
+
+        >
+
+        <com.vanniktech.emoji.EmojiTextView
+            android:id="@+id/sendPrivateCommentTextMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="2dp"
+            android:maxWidth="200dp"
+            android:minHeight="15dp"
+            android:text="hello"
+            android:textColor="@android:color/white"
+
+            android:textSize="15sp" />
+
+
+        <ImageView
+            android:id="@+id/send_state"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="2dp"
+            android:layout_alignBottom="@+id/sendPrivateCommentTextMessage"
+            android:layout_toEndOf="@+id/sendPrivateCommentTextMessage"
+
+            android:src="@drawable/not_seen_check" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/sendMessaageTextTime"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="5dp"
+        android:layout_below="@+id/recievePrivateCommentMessageContainer"
+        android:text="14:14"
+        android:visibility="gone"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/textContext"
+        android:textSize="13sp" />
+</RelativeLayout>

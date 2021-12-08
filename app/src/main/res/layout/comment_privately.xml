@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/editAboutRoot"
+    android:background="@android:color/transparent"
+
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/curveHolder"
+        android:background="@drawable/bottom_sheet_curve">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            app:contentInsetStart="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/sendMarkedImages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:textSize="17sp"
+                    android:layout_marginEnd="20dp"
+
+                    android:background="?android:selectableItemBackgroundBorderless"
+                    android:text="Type your message"
+                    android:textColor="@color/colorPrimary"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Toolbar"
+            >
+            <com.vanniktech.emoji.EmojiEditText
+                android:id="@+id/ediAboutTextBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:maxHeight="100dp"
+                android:textColor="@color/textContext"
+
+                android:layout_centerVertical="true"
+
+                android:padding="2dp"
+
+                android:background="@drawable/background"
+
+                android:hint="Start typing..."
+                android:textColorHint="@color/textContext"
+                android:textSize="17sp"
+
+                app:layout_dodgeInsetEdges="bottom" />
+
+            <ImageView
+                android:id="@+id/editAboutSwitchKeyboard"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/my_ripple"
+                android:src="@drawable/emoji"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:padding="12sp"
+            android:layout_centerHorizontal="true"
+
+            android:id="@+id/editAboutFinish"
+            android:background="@drawable/send_group_background"
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_height="40dp"
+            android:clickable="true"
+            android:src="@drawable/send1"
+            android:layout_marginBottom="5dp"
+            android:focusable="true" />
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:background="@color/lineBackground"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10sp"
+            android:layout_alignParentBottom="true"
+            />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:padding="7dp"
+            android:clickable="true"
+            android:src="@drawable/cancel"
+            android:layout_marginStart="20dp"
+            android:id="@+id/editAboutCancel"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="10dp"
+
+            android:background="@drawable/cancel_background"
+            android:layout_height="40dp"
+            android:focusable="true" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

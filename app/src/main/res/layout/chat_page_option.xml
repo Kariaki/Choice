@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:paddingBottom="15dp"
+    android:id="@+id/mainRoot"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/topHolder"
+        android:layout_width="50dp"
+        android:layout_height="5dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/round_background"
+        android:orientation="vertical"
+        android:layout_marginBottom="5dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/nameText"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginStart="20dp"
+        android:textSize="17sp"
+        android:text="Options"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/block"
+        android:background="@drawable/my_ripple"
+        android:orientation="horizontal"
+        android:layout_marginStart="10dp"
+        >
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:rotation="-5"
+            android:layout_gravity="center_vertical"
+            android:visibility="visible"
+            android:src="@drawable/block_user"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:id="@+id/blockText"
+            android:text="Block"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/textColor"
+            android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/mute"
+        android:background="@drawable/my_ripple"
+        android:orientation="horizontal"
+        android:layout_marginStart="10dp"
+        >
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center_vertical"
+            android:visibility="visible"
+            android:src="@drawable/mute_notification"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Mute"
+            android:textColor="@color/textColor"
+            android:layout_marginStart="5dp"
+            android:id="@+id/muteText"
+            android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/my_ripple"
+        android:id="@+id/leaveGroup"
+
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:layout_marginStart="10dp"
+        >
+        <ImageView
+            android:layout_width="26dp"
+            android:visibility="visible"
+            android:layout_height="26dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/exit_group_chat"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Leave Group"
+            android:textColor="@color/textColor"
+            android:id="@+id/leaveGroupText"
+            android:layout_marginStart="5dp"
+            android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+
+</LinearLayout>

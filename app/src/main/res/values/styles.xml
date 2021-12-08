@@ -1,0 +1,87 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.NoActionBar.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="iconTint">@color/textContext</item>
+        <item name="colorOnBackground">@color/whiteGreen</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyThemeNoActionBar" parent="@style/Theme.MaterialComponents.NoActionBar.Bridge">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:buttonTint">@color/colorPrimary</item>
+
+
+    </style>
+
+    <style name="Theme_Dialog" parent="android:Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="DialogTheme" parent="@style/Theme.MaterialComponents.Light.NoActionBar.Bridge">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#60000000</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:buttonTint">@color/colorPrimary</item>
+
+
+    </style>
+
+    <style name="MyThemeNoActionBarSlide" parent="@style/Theme.MaterialComponents.Light.NoActionBar.Bridge">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:buttonTint">@color/colorPrimary</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+
+
+    </style>
+
+    <style name="textStyle" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@android:color/transparent</item>
+
+
+    </style>
+
+
+    <style name="buttonStyle">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="BottomSheeBackground" parent="@style/Widget.Design.BottomSheet.Modal">
+
+        <item name="android:background">@android:color/transparent</item>
+
+    </style>
+
+    <style name="BottomSheetDialog" parent="@style/Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="bottomSheetStyle">@style/BottomSheeBackground</item>
+
+    </style>
+
+    <style name="AppButton" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@android:color/transparent</item>
+    </style>
+
+    <style name="radio">
+        <item name="buttonTint">@color/colorPrimary</item>
+    </style>
+
+    <style name="Widget.MyThemeNoActionBar.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+
+
+</resources>
