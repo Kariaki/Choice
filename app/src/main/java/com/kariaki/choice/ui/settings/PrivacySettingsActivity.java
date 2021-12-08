@@ -18,7 +18,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.kariaki.choice.model.UserInformation;
 import com.kariaki.choice.R;
-import com.kariaki.choice.ui.DialogBox.ChoiceDialogBoxMultiChoice;
+import com.kariaki.choice.ui.dialogbox.ChoiceDialogBoxMultiChoice;
 import com.kariaki.choice.ui.Settings.Entities.PrivacySettings;
 import com.kariaki.choice.ui.util.Theme;
 

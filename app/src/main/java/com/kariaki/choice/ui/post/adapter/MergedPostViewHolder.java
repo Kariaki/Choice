@@ -24,7 +24,7 @@ import com.kariaki.choice.model.Post;
 import com.kariaki.choice.R;
 import com.kariaki.choice.ui.Post.PostTypes;
 import com.kariaki.choice.ui.util.Functions;
-import com.kariaki.choice.ui.util.Time.TimeFactor;
+import com.kariaki.choice.ui.util.time.TimeFactor;
 import com.vanniktech.emoji.EmojiTextView;
 
 import de.hdodenhof.circleimageview.CircleImageView;

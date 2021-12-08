@@ -24,7 +24,7 @@ import com.kariaki.choice.ui.Post.Adapter.ViewPagerAdapter;
 import com.kariaki.choice.ui.Post.PostInfo;
 import com.kariaki.choice.ui.util.LastCheck;
 import com.kariaki.choice.ui.util.PostLifeSpans;
-import com.kariaki.choice.ui.util.Time.TimeFactor;
+import com.kariaki.choice.ui.util.time.TimeFactor;
 
 import java.util.HashMap;
 import java.util.Map;

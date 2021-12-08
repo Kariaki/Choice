@@ -12,7 +12,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.kariaki.choice.R;
-import com.kariaki.choice.ui.DialogBox.ChoiceDialogBoxMultiChoice;
+import com.kariaki.choice.ui.dialogbox.ChoiceDialogBoxMultiChoice;
 import com.kariaki.choice.ui.util.PostLifeSpans;
 import com.kariaki.choice.ui.util.Theme;
 

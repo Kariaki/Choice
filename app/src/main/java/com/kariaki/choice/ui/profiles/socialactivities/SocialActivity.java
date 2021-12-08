@@ -22,7 +22,7 @@ import com.kariaki.choice.model.CloudPost;
 import com.kariaki.choice.model.Post;
 import com.kariaki.choice.model.UserInformation;
 import com.kariaki.choice.R;
-import com.kariaki.choice.ui.MainPage.Pages.Notifications.Adapters.PageAdapter;
+import com.kariaki.choice.ui.mainpage.pages.notifications.adapters.PageAdapter;
 import com.kariaki.choice.ui.Post.Adapter.PostAdapter;
 import com.kariaki.choice.ui.Post.PostInfo;
 import com.kariaki.choice.ui.Profiles.SocialActivities.Pages.Posts;

@@ -26,7 +26,7 @@ import com.kariaki.choice.model.database.entities.MyChatChannel;
 import com.kariaki.choice.model.UserDetail;
 import com.kariaki.choice.model.UserInformation;
 import com.kariaki.choice.R;
-import com.kariaki.choice.ui.DialogBox.ChoiceDialogBox;
+import com.kariaki.choice.ui.dialogbox.ChoiceDialogBox;
 import com.kariaki.choice.ui.Settings.Entities.PrivacySettings;
 import com.kariaki.choice.ui.Settings.Settings;
 import com.kariaki.choice.ui.util.Functions;
