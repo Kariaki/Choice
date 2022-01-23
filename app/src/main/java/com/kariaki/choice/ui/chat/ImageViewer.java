@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.Chat;
+package com.kariaki.choice.ui.chat;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -21,7 +21,7 @@ import com.davemorrissey.labs.subscaleview.ImageSource;
 import com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView;
 import com.kariaki.choice.model.UserInformation;
 import com.kariaki.choice.R;
-import com.kariaki.choice.ui.util.Time.TimeFactor;
+import com.kariaki.choice.ui.util.time.TimeFactor;
 import com.kariaki.choice.ui.util.UserNaming;
 
 import de.hdodenhof.circleimageview.CircleImageView;

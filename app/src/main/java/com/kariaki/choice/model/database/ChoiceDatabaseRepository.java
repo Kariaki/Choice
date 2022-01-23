@@ -1,4 +1,4 @@
-package com.kariaki.choice.model.Database;
+package com.kariaki.choice.model.database;
 
 import android.app.Application;
 import android.os.AsyncTask;
@@ -6,10 +6,10 @@ import android.os.AsyncTask;
 import androidx.lifecycle.LiveData;
 
 import com.kariaki.choice.model.CloudPost;
-import com.kariaki.choice.model.Database.Entities.ChatList;
-import com.kariaki.choice.model.Database.Entities.ChoiceUser;
-import com.kariaki.choice.model.Database.Entities.Message;
-import com.kariaki.choice.model.Database.Entities.MyChatChannel;
+import com.kariaki.choice.model.database.entities.ChatList;
+import com.kariaki.choice.model.database.entities.ChoiceUser;
+import com.kariaki.choice.model.database.entities.Message;
+import com.kariaki.choice.model.database.entities.MyChatChannel;
 import com.kariaki.choice.model.Post;
 
 import java.util.List;

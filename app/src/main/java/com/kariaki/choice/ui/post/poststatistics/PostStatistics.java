@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.Post.PostStatistics;
+package com.kariaki.choice.ui.post.poststatistics;
 
 import android.app.Dialog;
 import android.content.SharedPreferences;
@@ -24,7 +24,7 @@ import com.kariaki.choice.model.database.ChoiceViewModel;
 import com.kariaki.choice.model.database.entities.ChoiceUser;
 import com.kariaki.choice.model.UserDetail;
 import com.kariaki.choice.R;
-import com.kariaki.choice.ui.Post.PostTypes;
+import com.kariaki.choice.ui.post.PostTypes;
 import com.kariaki.choice.ui.util.Theme;
 
 import java.util.ArrayList;

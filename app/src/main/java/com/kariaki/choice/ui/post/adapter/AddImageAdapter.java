@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.Post.Adapter;
+package com.kariaki.choice.ui.post.adapter;
 
 import android.net.Uri;
 import android.view.LayoutInflater;

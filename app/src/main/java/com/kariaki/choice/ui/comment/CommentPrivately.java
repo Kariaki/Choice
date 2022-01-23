@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.Comment;
+package com.kariaki.choice.ui.comment;
 
 import android.content.Context;
 import android.widget.Toast;
@@ -13,8 +13,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.kariaki.choice.model.database.entities.CloudMessage;
 import com.kariaki.choice.model.database.MessageState;
-import com.kariaki.choice.ui.Chat.ChannelTypes;
-import com.kariaki.choice.ui.Chat.Channels;
+import com.kariaki.choice.ui.chat.ChannelTypes;
+import com.kariaki.choice.ui.chat.Channels;
 
 public class CommentPrivately {
 

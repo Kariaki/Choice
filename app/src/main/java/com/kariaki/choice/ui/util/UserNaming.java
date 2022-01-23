@@ -27,7 +27,7 @@ import com.kariaki.choice.model.database.entities.MyChatChannel;
 import com.kariaki.choice.model.UserDetail;
 import com.kariaki.choice.model.UserInformation;
 import com.kariaki.choice.R;
-import com.kariaki.choice.ui.MainPage.Pages.Chat;
+import com.kariaki.choice.ui.mainpage.pages.Chat;
 import com.squareup.picasso.NetworkPolicy;
 import com.squareup.picasso.Picasso;
 

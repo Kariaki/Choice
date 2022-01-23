@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/mynotificationRoot"
     android:layout_height="match_parent"
-    tools:context="com.kariaki.choice.UI.MainPage.Pages.Notifications.MyContent">
+    tools:context="com.kariaki.choice.ui.mainpage.pages.notifications.MyContent">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"

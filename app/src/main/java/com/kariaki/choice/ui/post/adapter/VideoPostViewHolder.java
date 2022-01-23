@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.Post.Adapter;
+package com.kariaki.choice.ui.post.adapter;
 
 import android.content.Context;
 import android.os.Build;
@@ -20,7 +20,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.kariaki.choice.model.Post;
 import com.kariaki.choice.R;
-import com.kariaki.choice.ui.Post.PostTypes;
+import com.kariaki.choice.ui.post.PostTypes;
 import com.kariaki.choice.ui.util.Functions;
 import com.kariaki.choice.ui.util.time.TimeFactor;
 import com.vanniktech.emoji.EmojiTextView;

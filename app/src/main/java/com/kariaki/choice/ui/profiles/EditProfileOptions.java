@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.Profiles;
+package com.kariaki.choice.ui.profiles;
 
 import android.app.Dialog;
 import android.content.Intent;

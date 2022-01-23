@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.Profiles;
+package com.kariaki.choice.ui.profiles;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -48,13 +48,13 @@ import com.kariaki.choice.R;
 import com.kariaki.choice.ui.chat.ChannelTypes;
 import com.kariaki.choice.ui.chat.ChatPage;
 import com.kariaki.choice.ui.dialogbox.ChoiceDialogBox;
-import com.kariaki.choice.ui.Post.Adapter.PostAdapter;
-import com.kariaki.choice.ui.Post.PostInfo;
-import com.kariaki.choice.ui.Post.PostTypes;
-import com.kariaki.choice.ui.Post.Viewer.PostImageViewer;
-import com.kariaki.choice.ui.Post.Viewer.PostVideoViewer;
-import com.kariaki.choice.ui.Settings.Entities.PrivacySettings;
-import com.kariaki.choice.ui.Settings.Settings;
+import com.kariaki.choice.ui.post.adapter.PostAdapter;
+import com.kariaki.choice.ui.post.PostInfo;
+import com.kariaki.choice.ui.post.PostTypes;
+import com.kariaki.choice.ui.post.viewer.PostImageViewer;
+import com.kariaki.choice.ui.post.viewer.PostVideoViewer;
+import com.kariaki.choice.ui.settings.entities.PrivacySettings;
+import com.kariaki.choice.ui.settings.Settings;
 import com.kariaki.choice.ui.util.ConnectionState;
 import com.kariaki.choice.ui.util.FastBlur;
 import com.kariaki.choice.ui.util.LastCheck;

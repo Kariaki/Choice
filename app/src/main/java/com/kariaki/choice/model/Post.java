@@ -7,7 +7,7 @@ import androidx.annotation.NonNull;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
-import com.kariaki.choice.UI.Post.PostTypes;
+import com.kariaki.choice.ui.post.PostTypes;
 
 @Entity(tableName = "post_table")
 public class Post implements PostTypes, Parcelable {

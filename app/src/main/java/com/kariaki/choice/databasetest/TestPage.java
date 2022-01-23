@@ -1,4 +1,4 @@
-package com.kariaki.choice.DatabaseTest;
+package com.kariaki.choice.databasetest;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;

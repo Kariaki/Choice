@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
 
     android:background="@android:color/background_dark"
-    tools:context="com.kariaki.choice.UI.Profiles.ViewProfilePicture">
+    tools:context="com.kariaki.choice.ui.profiles.ViewProfilePicture">
 
     <RelativeLayout
         android:layout_width="40dp"

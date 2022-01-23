@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.Post.Adapter;
+package com.kariaki.choice.ui.post.adapter;
 
 import android.content.Context;
 import android.graphics.drawable.BitmapDrawable;

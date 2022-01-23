@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.Chat;
+package com.kariaki.choice.ui.chat;
 
 import android.app.Dialog;
 import android.content.SharedPreferences;
@@ -20,7 +20,7 @@ import com.kariaki.choice.model.database.entities.GroupChatInformation;
 import com.kariaki.choice.model.UserDetail;
 import com.kariaki.choice.model.UserInformation;
 import com.kariaki.choice.R;
-import com.kariaki.choice.ui.DialogBox.ChoiceDialogBox;
+import com.kariaki.choice.ui.dialogbox.ChoiceDialogBox;
 import com.kariaki.choice.ui.util.Theme;
 
 import java.util.HashMap;

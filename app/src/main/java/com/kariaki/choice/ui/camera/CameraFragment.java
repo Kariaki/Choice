@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.Camera;
+package com.kariaki.choice.ui.camera;
 
 import android.content.Context;
 import android.graphics.Point;

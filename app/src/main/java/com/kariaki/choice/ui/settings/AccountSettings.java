@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.Settings;
+package com.kariaki.choice.ui.settings;
 
 import androidx.appcompat.app.AppCompatActivity;
 

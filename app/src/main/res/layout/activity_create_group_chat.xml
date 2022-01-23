@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/groupChatRootView"
-    tools:context="com.kariaki.choice.UI.GroupChat.CreateGroupChat">
+    tools:context="com.kariaki.choice.ui.groupchat.CreateGroupChat">
 
 
     <androidx.appcompat.widget.Toolbar

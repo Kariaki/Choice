@@ -1,4 +1,4 @@
-package com.kariaki.choice.model.Database;
+package com.kariaki.choice.model.database;
 
 import android.app.Application;
 
@@ -7,9 +7,9 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
 import com.kariaki.choice.model.CloudPost;
-import com.kariaki.choice.model.Database.Entities.ChoiceUser;
-import com.kariaki.choice.model.Database.Entities.Message;
-import com.kariaki.choice.model.Database.Entities.MyChatChannel;
+import com.kariaki.choice.model.database.entities.ChoiceUser;
+import com.kariaki.choice.model.database.entities.Message;
+import com.kariaki.choice.model.database.entities.MyChatChannel;
 import com.kariaki.choice.model.Post;
 
 

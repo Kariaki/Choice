@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.Messaging.ChatViewHolders.PrivateComment;
+package com.kariaki.choice.ui.messaging.chatviewholders.privatecomment;
 
 import android.content.Context;
 import android.view.View;
@@ -14,10 +14,10 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.kariaki.choice.model.database.entities.Message;
 import com.kariaki.choice.model.MessageType;
 import com.kariaki.choice.R;
-import com.kariaki.choice.ui.Messaging.Adapter.ChatAdapter;
-import com.kariaki.choice.ui.Messaging.ChatViewHolders.ChatMainViewHolder;
+import com.kariaki.choice.ui.messaging.adapter.ChatAdapter;
+import com.kariaki.choice.ui.messaging.chatviewholders.ChatMainViewHolder;
 import com.kariaki.choice.ui.util.Theme;
-import com.kariaki.choice.ui.util.Time.TimeFactor;
+import com.kariaki.choice.ui.util.time.TimeFactor;
 import com.vanniktech.emoji.EmojiManager;
 import com.vanniktech.emoji.EmojiTextView;
 import com.vanniktech.emoji.ios.IosEmojiProvider;

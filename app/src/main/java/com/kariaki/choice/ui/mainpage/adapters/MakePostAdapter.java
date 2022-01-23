@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.MainPage.Adapters;
+package com.kariaki.choice.ui.mainpage.adapters;
 
 import android.content.Context;
 import android.net.Uri;
@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.kariaki.choice.R;
-import com.kariaki.choice.ui.MakePost.GalleryItem;
+import com.kariaki.choice.ui.makepost.GalleryItem;
 
 import java.io.File;
 import java.util.ArrayList;

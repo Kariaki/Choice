@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.Profiles;
+package com.kariaki.choice.ui.profiles;
 
 import android.app.Dialog;
 import android.content.Intent;
@@ -27,8 +27,8 @@ import com.kariaki.choice.model.UserDetail;
 import com.kariaki.choice.model.UserInformation;
 import com.kariaki.choice.R;
 import com.kariaki.choice.ui.dialogbox.ChoiceDialogBox;
-import com.kariaki.choice.ui.Settings.Entities.PrivacySettings;
-import com.kariaki.choice.ui.Settings.Settings;
+import com.kariaki.choice.ui.settings.entities.PrivacySettings;
+import com.kariaki.choice.ui.settings.Settings;
 import com.kariaki.choice.ui.util.Functions;
 import com.kariaki.choice.ui.util.Theme;
 import com.vanniktech.emoji.EmojiTextView;

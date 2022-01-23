@@ -1,4 +1,4 @@
-package com.kariaki.choice.ContactSync;
+package com.kariaki.choice.contactsync;
 
 public class ContactData {
 

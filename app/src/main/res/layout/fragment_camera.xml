@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/CameraRootlayout"
-    tools:context="com.kariaki.choice.UI.Camera.CameraFragment">
+    tools:context="com.kariaki.choice.ui.camera.CameraFragment">
 
     <TextView
         android:layout_width="wrap_content"

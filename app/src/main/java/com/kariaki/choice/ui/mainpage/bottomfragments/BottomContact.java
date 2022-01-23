@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.MainPage.BottomFragments;
+package com.kariaki.choice.ui.mainpage.bottomfragments;
 
 import android.app.Dialog;
 import android.content.Intent;
@@ -32,12 +32,12 @@ import com.kariaki.choice.model.database.ChoiceViewModel;
 import com.kariaki.choice.model.database.entities.ChoiceUser;
 import com.kariaki.choice.model.UserInformation;
 import com.kariaki.choice.R;
-import com.kariaki.choice.ui.Chat.ChannelTypes;
-import com.kariaki.choice.ui.Chat.ChatPage;
-import com.kariaki.choice.ui.GroupChat.CreateGroupChat;
-import com.kariaki.choice.ui.MainPage.Adapters.ContactAndFriendsAdapter;
-import com.kariaki.choice.ui.MainPage.Pages.Chat;
-import com.kariaki.choice.ui.Settings.ChatSettingsActivity;
+import com.kariaki.choice.ui.chat.ChannelTypes;
+import com.kariaki.choice.ui.chat.ChatPage;
+import com.kariaki.choice.ui.groupchat.CreateGroupChat;
+import com.kariaki.choice.ui.mainpage.adapters.ContactAndFriendsAdapter;
+import com.kariaki.choice.ui.mainpage.pages.Chat;
+import com.kariaki.choice.ui.settings.ChatSettingsActivity;
 import com.kariaki.choice.ui.util.Theme;
 
 import java.util.ArrayList;

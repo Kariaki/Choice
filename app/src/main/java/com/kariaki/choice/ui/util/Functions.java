@@ -23,8 +23,8 @@ import com.google.firebase.storage.StorageReference;
 import com.kariaki.choice.model.Post;
 import com.kariaki.choice.model.UserDetail;
 import com.kariaki.choice.R;
-import com.kariaki.choice.ui.Post.PostInfo;
-import com.kariaki.choice.ui.util.Time.TimeFactor;
+import com.kariaki.choice.ui.post.PostInfo;
+import com.kariaki.choice.ui.util.time.TimeFactor;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.Chat;
+package com.kariaki.choice.ui.chat;
 
 import android.app.Activity;
 

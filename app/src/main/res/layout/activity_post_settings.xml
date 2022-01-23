@@ -7,7 +7,7 @@
     android:background="@color/whiteGreen"
     android:id="@+id/postSettingsRootView"
     android:layout_height="match_parent"
-    tools:context="com.kariaki.choice.UI.Settings.PostSettings">
+    tools:context="com.kariaki.choice.ui.settings.PostSettings">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"

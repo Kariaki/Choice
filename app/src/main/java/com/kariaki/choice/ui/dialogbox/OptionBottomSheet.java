@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.DialogBox;
+package com.kariaki.choice.ui.dialogbox;
 
 import android.app.Dialog;
 import android.content.SharedPreferences;
@@ -23,7 +23,7 @@ import com.kariaki.choice.model.Post;
 import com.kariaki.choice.model.UserDetail;
 import com.kariaki.choice.model.UserInformation;
 import com.kariaki.choice.R;
-import com.kariaki.choice.ui.Post.PostTypes;
+import com.kariaki.choice.ui.post.PostTypes;
 import com.kariaki.choice.ui.util.Theme;
 
 import static android.content.Context.MODE_PRIVATE;

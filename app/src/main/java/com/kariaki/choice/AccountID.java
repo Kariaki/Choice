@@ -2,7 +2,7 @@ package com.kariaki.choice;
 
 import android.content.Context;
 
-import com.kariaki.choice.Model.UserInformation;
+import com.kariaki.choice.model.UserInformation;
 
 public class AccountID {
 

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:id="@+id/rootView"
-    tools:context="com.kariaki.choice.UI.Profiles.EditAboutPage">
+    tools:context="com.kariaki.choice.ui.profiles.EditAboutPage">
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"

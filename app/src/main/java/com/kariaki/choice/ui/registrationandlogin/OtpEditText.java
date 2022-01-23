@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.RegistrationAndLogin;
+package com.kariaki.choice.ui.registrationandlogin;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;

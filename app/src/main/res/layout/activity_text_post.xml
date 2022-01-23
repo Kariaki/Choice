@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/textPostRootView"
-    tools:context="com.kariaki.choice.UI.MakePost.TextPost">
+    tools:context="com.kariaki.choice.ui.makepost.TextPost">
 
 
     <androidx.appcompat.widget.Toolbar

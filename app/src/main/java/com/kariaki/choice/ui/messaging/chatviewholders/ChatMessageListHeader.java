@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.Messaging.ChatViewHolders;
+package com.kariaki.choice.ui.messaging.chatviewholders;
 
 import android.content.Context;
 import android.view.View;
@@ -9,8 +9,8 @@ import androidx.annotation.NonNull;
 import com.kariaki.choice.model.database.entities.Message;
 import com.kariaki.choice.model.MessageType;
 import com.kariaki.choice.R;
-import com.kariaki.choice.ui.Messaging.Adapter.ChatAdapter;
-import com.kariaki.choice.ui.util.Time.TimeFactor;
+import com.kariaki.choice.ui.messaging.adapter.ChatAdapter;
+import com.kariaki.choice.ui.util.time.TimeFactor;
 
 public class ChatMessageListHeader extends ChatMainViewHolder {
 

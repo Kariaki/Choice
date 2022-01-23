@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.Messaging;
+package com.kariaki.choice.ui.messaging;
 
 import android.content.Context;
 import android.graphics.Canvas;

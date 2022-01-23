@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
 
     android:id="@+id/privacySettingsRootView"
-    tools:context="com.kariaki.choice.UI.Settings.PrivacySettingsActivity">
+    tools:context="com.kariaki.choice.ui.settings.PrivacySettingsActivity">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"

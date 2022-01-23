@@ -1,11 +1,11 @@
-package com.kariaki.choice.ui.Post.Adapter;
+package com.kariaki.choice.ui.post.adapter;
 
 import android.content.Context;
 import android.view.View;
 
 import androidx.annotation.NonNull;
 
-import com.kariaki.choice.ui.Post.PostTypes;
+import com.kariaki.choice.ui.post.PostTypes;
 
 
 public class PostDefaultViewHolder extends PostMainViewHolder {

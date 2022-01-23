@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.Settings.Entities;
+package com.kariaki.choice.ui.settings.entities;
 
 public class ChatSettings {
 }

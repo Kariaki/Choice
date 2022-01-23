@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:id="@+id/editMemberRoot"
     android:orientation="vertical"
-    tools:context=".UI.GroupChat.GroupEditMembersOrAdmin">
+    tools:context=".ui.groupchat.GroupEditMembersOrAdmin">
 
 
     <androidx.appcompat.widget.Toolbar

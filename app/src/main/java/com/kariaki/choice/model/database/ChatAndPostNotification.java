@@ -1,4 +1,4 @@
-package com.kariaki.choice.model.Database;
+package com.kariaki.choice.model.database;
 
 import androidx.annotation.NonNull;
 import androidx.room.Entity;

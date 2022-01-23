@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.GroupChat;
+package com.kariaki.choice.ui.groupchat;
 
 import android.content.ContentResolver;
 import android.content.Intent;
@@ -38,9 +38,9 @@ import com.kariaki.choice.model.database.MessageState;
 import com.kariaki.choice.model.MessageType;
 import com.kariaki.choice.model.UserInformation;
 import com.kariaki.choice.R;
-import com.kariaki.choice.ui.Chat.ChannelTypes;
-import com.kariaki.choice.ui.Chat.Channels;
-import com.kariaki.choice.ui.MainPage.Adapters.ContactAndFriendsAdapter;
+import com.kariaki.choice.ui.chat.ChannelTypes;
+import com.kariaki.choice.ui.chat.Channels;
+import com.kariaki.choice.ui.mainpage.adapters.ContactAndFriendsAdapter;
 import com.kariaki.choice.ui.util.Theme;
 
 import java.io.ByteArrayOutputStream;

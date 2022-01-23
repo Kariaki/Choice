@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.Chat.Entities;
+package com.kariaki.choice.ui.chat.entities;
 
 public class SendMessage {
 }

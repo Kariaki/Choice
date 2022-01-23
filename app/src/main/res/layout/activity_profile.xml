@@ -6,7 +6,7 @@
     android:id="@+id/profilePageRootView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.kariaki.choice.UI.Profiles.SettingsPage"
+    tools:context="com.kariaki.choice.ui.profiles.SettingsPage"
     >
 
     <androidx.appcompat.widget.Toolbar

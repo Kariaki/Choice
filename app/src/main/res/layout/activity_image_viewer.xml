@@ -6,7 +6,7 @@
     android:background="@color/dark_background"
     android:layout_height="match_parent"
     android:id="@+id/rootView"
-    tools:context="com.kariaki.choice.UI.Chat.ImageViewer">
+    tools:context="com.kariaki.choice.ui.chat.ImageViewer">
 
             <RelativeLayout
                 android:layout_width="match_parent"

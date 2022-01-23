@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.Post.PostStatistics;
+package com.kariaki.choice.ui.post.poststatistics;
 
 public interface PostStats {
 

@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.MainPage.Adapters;
+package com.kariaki.choice.ui.mainpage.adapters;
 
 import android.text.TextUtils;
 import android.view.View;
@@ -16,7 +16,7 @@ import com.kariaki.choice.model.database.ChoiceViewModel;
 import com.kariaki.choice.model.database.entities.MyChatChannel;
 import com.kariaki.choice.model.UserInformation;
 import com.kariaki.choice.R;
-import com.kariaki.choice.ui.Chat.ChannelTypes;
+import com.kariaki.choice.ui.chat.ChannelTypes;
 import com.kariaki.choice.ui.util.UserNaming;
 import com.vanniktech.emoji.EmojiTextView;
 

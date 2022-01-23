@@ -6,7 +6,7 @@
     android:background="@color/darkGreen"
     android:id="@+id/rootView"
     android:layout_height="match_parent"
-    tools:context="com.kariaki.choice.UI.Settings.NotificationSettings">
+    tools:context="com.kariaki.choice.ui.settings.NotificationSettings">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"

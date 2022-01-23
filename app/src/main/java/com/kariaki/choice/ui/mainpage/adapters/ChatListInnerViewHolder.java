@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.MainPage.Adapters;
+package com.kariaki.choice.ui.mainpage.adapters;
 
 import android.view.View;
 import android.widget.ImageView;

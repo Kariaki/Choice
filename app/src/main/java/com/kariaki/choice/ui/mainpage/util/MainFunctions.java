@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.MainPage.util;
+package com.kariaki.choice.ui.mainpage.util;
 
 import android.graphics.Bitmap;
 
@@ -19,8 +19,8 @@ import com.kariaki.choice.model.database.MessageState;
 import com.kariaki.choice.model.MessageType;
 import com.kariaki.choice.notification.PushNotification;
 import com.kariaki.choice.notification.PushNotificationEntry;
-import com.kariaki.choice.ui.Chat.ChannelTypes;
-import com.kariaki.choice.ui.Chat.Channels;
+import com.kariaki.choice.ui.chat.ChannelTypes;
+import com.kariaki.choice.ui.chat.Channels;
 
 import java.util.HashMap;
 import java.util.Map;

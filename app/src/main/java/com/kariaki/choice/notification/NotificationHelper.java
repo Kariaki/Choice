@@ -1,4 +1,4 @@
-package com.kariaki.choice.Notification;
+package com.kariaki.choice.notification;
 
 import android.annotation.TargetApi;
 import android.app.Notification;
@@ -9,9 +9,6 @@ import android.content.Context;
 import android.content.ContextWrapper;
 import android.graphics.drawable.BitmapDrawable;
 import android.media.AudioAttributes;
-import android.media.Ringtone;
-import android.media.RingtoneManager;
-import android.media.SoundPool;
 import android.net.Uri;
 import android.os.Build;
 

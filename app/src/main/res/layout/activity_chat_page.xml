@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/transparent"
-    tools:context="com.kariaki.choice.UI.Chat.ChatPage">
+    tools:context="com.kariaki.choice.ui.chat.ChatPage">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/chatPageAppBar"

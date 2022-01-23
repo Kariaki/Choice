@@ -19,48 +19,48 @@
         android:roundIcon="@mipmap/app_icon_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".UI.RegistrationAndLogin.InputPhoneNumber" />
-        <activity android:name=".UI.RegistrationAndLogin.AuthenticationPage" />
+        <activity android:name=".ui.registrationandlogin.InputPhoneNumber" />
+        <activity android:name=".ui.registrationandlogin.AuthenticationPage" />
 
-        <service android:name=".Notification.PushNotificationService" />
+        <service android:name=".notification.PushNotificationService" />
 
-        <activity android:name=".DatabaseTest.TestPage" />
-        <activity android:name=".UI.Profiles.EditAboutPage" />
-        <activity android:name=".UI.Profiles.EditProfilePage" />
-        <activity android:name=".UI.Chat.ChatVideoViewer" />
+        <activity android:name=".databasetest.TestPage" />
+        <activity android:name=".ui.profiles.EditAboutPage" />
+        <activity android:name=".ui.profiles.EditProfilePage" />
+        <activity android:name=".ui.chat.ChatVideoViewer" />
         <activity
-            android:name=".UI.Chat.ImageViewer"
+            android:name=".ui.chat.ImageViewer"
             android:theme="@style/DialogTheme" />
         <activity
-            android:name=".UI.Chat.ChatPage"
+            android:name=".ui.chat.ChatPage"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".UI.Profiles.SocialActivities.SocialActivity" />
-        <activity android:name=".UI.Settings.AccountSettings" />
-        <activity android:name=".UI.Settings.NotificationSettings" />
+        <activity android:name=".ui.profiles.socialactivities.SocialActivity" />
+        <activity android:name=".ui.settings.AccountSettings" />
+        <activity android:name=".ui.settings.NotificationSettings" />
         <activity
-            android:name=".UI.Comment.CommentPage"
+            android:name=".ui.comment.CommentPage"
             android:theme="@style/MyThemeNoActionBarSlide" />
-        <activity android:name=".UI.Profiles.ViewProfilePicture" />
-        <activity android:name=".UI.Post.Viewer.PostVideoViewer" />
-        <activity android:name=".UI.Post.Viewer.PostImageViewer" />
-        <activity android:name=".UI.Settings.ChatSettingsActivity" />
-        <activity android:name=".UI.Settings.PrivacySettingsActivity" />
-        <activity android:name=".UI.Profiles.SettingsPage" />
-        <activity android:name=".UI.MakePost.VideoPost" />
-        <activity android:name=".UI.MakePost.FinishPost" />
-        <activity android:name=".UI.MakePost.ImagePost" />
-        <activity android:name=".UI.Comment.DragDismiss" />
-        <activity android:name=".UI.GroupChat.CreateGroupChat" />
-        <activity android:name=".UI.GroupChat.GroupChatMembers" />
-        <activity android:name=".UI.GroupChat.GroupChatProfile" />
-        <activity android:name=".UI.GroupChat.GroupEditMembersOrAdmin" />
+        <activity android:name=".ui.profiles.ViewProfilePicture" />
+        <activity android:name=".ui.post.viewer.PostVideoViewer" />
+        <activity android:name=".ui.post.viewer.PostImageViewer" />
+        <activity android:name=".ui.settings.ChatSettingsActivity" />
+        <activity android:name=".ui.settings.PrivacySettingsActivity" />
+        <activity android:name=".ui.profiles.SettingsPage" />
+        <activity android:name=".ui.makepost.VideoPost" />
+        <activity android:name=".ui.makepost.FinishPost" />
+        <activity android:name=".ui.makepost.ImagePost" />
+        <activity android:name=".ui.comment.DragDismiss" />
+        <activity android:name=".ui.groupchat.CreateGroupChat" />
+        <activity android:name=".ui.groupchat.GroupChatMembers" />
+        <activity android:name=".ui.groupchat.GroupChatProfile" />
+        <activity android:name=".ui.groupchat.GroupEditMembersOrAdmin" />
         <activity
-            android:name=".UI.Profiles.SocialProfile"
+            android:name=".ui.profiles.SocialProfile"
             android:theme="@style/MyThemeNoActionBarSlide" />
-        <activity android:name=".UI.Settings.PostSettings" />
-        <activity android:name=".UI.MakePost.TextPost" />
-        <activity android:name=".UI.RegistrationAndLogin.RegisterUser" />
-        <activity android:name=".UI.MainPage.SearchPage" />
+        <activity android:name=".ui.settings.PostSettings" />
+        <activity android:name=".ui.makepost.TextPost" />
+        <activity android:name=".ui.registrationandlogin.RegisterUser" />
+        <activity android:name=".ui.mainpage.SearchPage" />
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat" />

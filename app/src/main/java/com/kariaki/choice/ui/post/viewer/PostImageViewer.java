@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.Post.Viewer;
+package com.kariaki.choice.ui.post.viewer;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
@@ -20,8 +20,8 @@ import com.google.firebase.database.ValueEventListener;
 import com.kariaki.choice.model.Post;
 import com.kariaki.choice.model.UserInformation;
 import com.kariaki.choice.R;
-import com.kariaki.choice.ui.Post.Adapter.ViewPagerAdapter;
-import com.kariaki.choice.ui.Post.PostInfo;
+import com.kariaki.choice.ui.post.adapter.ViewPagerAdapter;
+import com.kariaki.choice.ui.post.PostInfo;
 import com.kariaki.choice.ui.util.LastCheck;
 import com.kariaki.choice.ui.util.PostLifeSpans;
 import com.kariaki.choice.ui.util.time.TimeFactor;
