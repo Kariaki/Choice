@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.MainPage.BottomFragments;
+package com.kariaki.choice.ui.mainpage.bottomfragments;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -19,10 +19,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.kariaki.choice.R;
-import com.kariaki.choice.ui.MainPage.Adapters.MakePostAdapter;
-import com.kariaki.choice.ui.MakePost.GalleryItem;
-import com.kariaki.choice.ui.MakePost.TextPost;
-import com.kariaki.choice.ui.Settings.PostSettings;
+import com.kariaki.choice.ui.mainpage.adapters.MakePostAdapter;
+import com.kariaki.choice.ui.makepost.GalleryItem;
+import com.kariaki.choice.ui.makepost.TextPost;
+import com.kariaki.choice.ui.settings.PostSettings;
 import com.kariaki.choice.ui.util.Theme;
 
 import java.util.ArrayList;

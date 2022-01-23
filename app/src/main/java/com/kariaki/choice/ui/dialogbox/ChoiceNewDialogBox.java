@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.DialogBox;
+package com.kariaki.choice.ui.dialogbox;
 
 import android.app.Dialog;
 import android.content.SharedPreferences;

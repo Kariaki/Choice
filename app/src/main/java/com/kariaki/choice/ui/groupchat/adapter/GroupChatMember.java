@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.GroupChat.Adapter;
+package com.kariaki.choice.ui.groupchat.adapter;
 
 public class GroupChatMember {
     private String phoneNumber;

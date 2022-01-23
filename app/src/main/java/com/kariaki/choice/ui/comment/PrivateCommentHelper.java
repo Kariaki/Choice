@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.Comment;
+package com.kariaki.choice.ui.comment;
 
 import android.app.Dialog;
 import android.content.SharedPreferences;
@@ -13,7 +13,7 @@ import androidx.annotation.NonNull;
 
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 import com.kariaki.choice.R;
-import com.kariaki.choice.ui.Profiles.EditFromBottom;
+import com.kariaki.choice.ui.profiles.EditFromBottom;
 import com.kariaki.choice.ui.util.Theme;
 import com.vanniktech.emoji.EmojiEditText;
 import com.vanniktech.emoji.EmojiPopup;

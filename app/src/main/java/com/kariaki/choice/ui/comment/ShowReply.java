@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.Comment;
+package com.kariaki.choice.ui.comment;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -30,10 +30,10 @@ import com.kariaki.choice.model.Post;
 import com.kariaki.choice.model.UserDetail;
 import com.kariaki.choice.model.UserInformation;
 import com.kariaki.choice.R;
-import com.kariaki.choice.ui.Chat.ChatPage;
-import com.kariaki.choice.ui.Messaging.Adapter.ChatAdapter;
-import com.kariaki.choice.ui.Profiles.PartialProfile;
-import com.kariaki.choice.ui.Profiles.SettingsPage;
+import com.kariaki.choice.ui.chat.ChatPage;
+import com.kariaki.choice.ui.messaging.adapter.ChatAdapter;
+import com.kariaki.choice.ui.profiles.PartialProfile;
+import com.kariaki.choice.ui.profiles.SettingsPage;
 
 import java.io.IOException;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.MainPage.Pages;
+package com.kariaki.choice.ui.mainpage.pages;
 
 import android.content.Context;
 import android.content.Intent;
@@ -41,15 +41,15 @@ import com.kariaki.choice.model.MessageType;
 import com.kariaki.choice.model.UserDetail;
 import com.kariaki.choice.model.UserInformation;
 import com.kariaki.choice.R;
-import com.kariaki.choice.ui.Chat.ChannelTypes;
-import com.kariaki.choice.ui.Chat.Channels;
-import com.kariaki.choice.ui.Chat.ChatPage;
-import com.kariaki.choice.ui.Chat.ChatPageBottomFragment;
-import com.kariaki.choice.ui.MainPage.Adapters.ChatListAdapter;
-import com.kariaki.choice.ui.MainPage.BottomFragments.BottomContact;
-import com.kariaki.choice.ui.MainPage.ChatFrament;
+import com.kariaki.choice.ui.chat.ChannelTypes;
+import com.kariaki.choice.ui.chat.Channels;
+import com.kariaki.choice.ui.chat.ChatPage;
+import com.kariaki.choice.ui.chat.ChatPageBottomFragment;
+import com.kariaki.choice.ui.mainpage.adapters.ChatListAdapter;
+import com.kariaki.choice.ui.mainpage.bottomfragments.BottomContact;
+import com.kariaki.choice.ui.mainpage.ChatFrament;
 import com.kariaki.choice.ui.util.Theme;
-import com.kariaki.choice.ui.util.Time.TimeFactor;
+import com.kariaki.choice.ui.util.time.TimeFactor;
 import com.vanniktech.emoji.EmojiTextView;
 
 import java.util.ArrayList;

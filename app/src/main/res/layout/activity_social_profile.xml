@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#674E4D4D"
-    tools:context="com.kariaki.choice.UI.Profiles.SocialProfile">
+    tools:context="com.kariaki.choice.ui.profiles.SocialProfile">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"

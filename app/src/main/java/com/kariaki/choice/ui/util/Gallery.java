@@ -13,7 +13,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 
-import com.kariaki.choice.ui.MakePost.GalleryItem;
+import com.kariaki.choice.ui.makepost.GalleryItem;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
 
     android:id="@+id/rootView"
-    tools:context="com.kariaki.choice.UI.MainPage.SearchPage">
+    tools:context="com.kariaki.choice.ui.mainpage.SearchPage">
 
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"

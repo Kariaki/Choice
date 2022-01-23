@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.MainPage;
+package com.kariaki.choice.ui.mainpage;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -30,8 +30,8 @@ import com.kariaki.choice.model.database.ChoiceViewModel;
 import com.kariaki.choice.model.database.entities.ChoiceUser;
 import com.kariaki.choice.model.UserDetail;
 import com.kariaki.choice.R;
-import com.kariaki.choice.ui.MainPage.Adapters.SearchAdapter;
-import com.kariaki.choice.ui.Profiles.SocialProfile;
+import com.kariaki.choice.ui.mainpage.adapters.SearchAdapter;
+import com.kariaki.choice.ui.profiles.SocialProfile;
 import com.kariaki.choice.ui.util.Theme;
 
 import java.util.ArrayList;

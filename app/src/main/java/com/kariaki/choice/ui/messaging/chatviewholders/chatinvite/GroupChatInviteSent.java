@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.Messaging.ChatViewHolders.ChatInvite;
+package com.kariaki.choice.ui.messaging.chatviewholders.chatinvite;
 
 import android.content.Context;
 import android.view.View;
@@ -21,8 +21,8 @@ import com.kariaki.choice.R;
 import com.kariaki.choice.ui.chat.ChannelTypes;
 import com.kariaki.choice.ui.chat.Channels;
 import com.kariaki.choice.ui.groupchat.GroupMember;
-import com.kariaki.choice.ui.Messaging.Adapter.ChatAdapter;
-import com.kariaki.choice.ui.Messaging.ChatViewHolders.ChatMainViewHolder;
+import com.kariaki.choice.ui.messaging.adapter.ChatAdapter;
+import com.kariaki.choice.ui.messaging.chatviewholders.ChatMainViewHolder;
 
 
 public class GroupChatInviteSent extends ChatMainViewHolder {

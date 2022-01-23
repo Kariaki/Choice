@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.Profiles;
+package com.kariaki.choice.ui.profiles;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -28,11 +28,11 @@ import com.google.firebase.storage.UploadTask;
 import com.kariaki.choice.model.UserDetail;
 import com.kariaki.choice.model.UserInformation;
 import com.kariaki.choice.R;
-import com.kariaki.choice.ui.Settings.AccountSettings;
-import com.kariaki.choice.ui.Settings.ChatSettingsActivity;
-import com.kariaki.choice.ui.Settings.NotificationSettings;
-import com.kariaki.choice.ui.Settings.PostSettings;
-import com.kariaki.choice.ui.Settings.PrivacySettingsActivity;
+import com.kariaki.choice.ui.settings.AccountSettings;
+import com.kariaki.choice.ui.settings.ChatSettingsActivity;
+import com.kariaki.choice.ui.settings.NotificationSettings;
+import com.kariaki.choice.ui.settings.PostSettings;
+import com.kariaki.choice.ui.settings.PrivacySettingsActivity;
 import com.kariaki.choice.ui.util.Functions;
 import com.kariaki.choice.ui.util.Theme;
 import com.theartofdev.edmodo.cropper.CropImage;

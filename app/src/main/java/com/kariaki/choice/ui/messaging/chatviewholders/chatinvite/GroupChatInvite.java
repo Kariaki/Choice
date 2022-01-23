@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.Messaging.ChatViewHolders.ChatInvite;
+package com.kariaki.choice.ui.messaging.chatviewholders.chatinvite;
 
 import android.content.Context;
 import android.view.View;
@@ -8,8 +8,8 @@ import androidx.annotation.NonNull;
 
 import com.kariaki.choice.model.MessageType;
 import com.kariaki.choice.R;
-import com.kariaki.choice.ui.Messaging.Adapter.ChatAdapter;
-import com.kariaki.choice.ui.Messaging.ChatViewHolders.ChatMainViewHolder;
+import com.kariaki.choice.ui.messaging.adapter.ChatAdapter;
+import com.kariaki.choice.ui.messaging.chatviewholders.ChatMainViewHolder;
 
 
 public class GroupChatInvite extends ChatMainViewHolder {

@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.Comment;
+package com.kariaki.choice.ui.comment;
 
 import android.os.Bundle;
 

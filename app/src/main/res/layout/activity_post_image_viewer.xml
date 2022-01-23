@@ -7,7 +7,7 @@
 
     android:layout_height="match_parent"
     android:background="#E20A0C0A"
-    tools:context="com.kariaki.choice.UI.Post.Viewer.PostImageViewer">
+    tools:context="com.kariaki.choice.ui.post.viewer.PostImageViewer">
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/postViewerViewPager"

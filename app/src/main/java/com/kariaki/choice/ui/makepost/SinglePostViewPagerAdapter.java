@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
 
 import com.bumptech.glide.Glide;
-import com.kariaki.choice.ui.Post.Adapter.ViewPagerAdapter;
+import com.kariaki.choice.ui.post.adapter.ViewPagerAdapter;
 
 public class SinglePostViewPagerAdapter extends PagerAdapter {
     String[] imageURI;

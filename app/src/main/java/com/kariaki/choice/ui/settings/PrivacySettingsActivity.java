@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.Settings;
+package com.kariaki.choice.ui.settings;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatCheckBox;
@@ -19,7 +19,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.kariaki.choice.model.UserInformation;
 import com.kariaki.choice.R;
 import com.kariaki.choice.ui.dialogbox.ChoiceDialogBoxMultiChoice;
-import com.kariaki.choice.ui.Settings.Entities.PrivacySettings;
+import com.kariaki.choice.ui.settings.entities.PrivacySettings;
 import com.kariaki.choice.ui.util.Theme;
 
 import java.util.ArrayList;

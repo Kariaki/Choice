@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.Profiles;
+package com.kariaki.choice.ui.profiles;
 
 import androidx.appcompat.app.AppCompatActivity;
 

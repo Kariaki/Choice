@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.MainPage.Pages.Notifications;
+package com.kariaki.choice.ui.mainpage.pages.notifications;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -28,12 +28,12 @@ import com.kariaki.choice.model.Post;
 import com.kariaki.choice.model.UserDetail;
 import com.kariaki.choice.model.UserInformation;
 import com.kariaki.choice.R;
-import com.kariaki.choice.ui.Comment.CommentPage;
-import com.kariaki.choice.ui.MainPage.Pages.Notifications.Adapters.GeneralNotificationAdapter;
-import com.kariaki.choice.ui.MainPage.util.MainFunctions;
-import com.kariaki.choice.ui.Post.PostInfo;
+import com.kariaki.choice.ui.comment.CommentPage;
+import com.kariaki.choice.ui.mainpage.pages.notifications.adapters.GeneralNotificationAdapter;
+import com.kariaki.choice.ui.mainpage.util.MainFunctions;
+import com.kariaki.choice.ui.post.PostInfo;
 import com.kariaki.choice.ui.util.Theme;
-import com.kariaki.choice.ui.util.Time.TimeFactor;
+import com.kariaki.choice.ui.util.time.TimeFactor;
 
 import java.util.ArrayList;
 import java.util.HashMap;

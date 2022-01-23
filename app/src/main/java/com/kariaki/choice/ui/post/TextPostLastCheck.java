@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.Post;
+package com.kariaki.choice.ui.post;
 
 public class TextPostLastCheck {
 

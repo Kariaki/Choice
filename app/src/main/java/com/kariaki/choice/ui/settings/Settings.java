@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.Settings;
+package com.kariaki.choice.ui.settings;
 
 public interface Settings {
 

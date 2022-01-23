@@ -1,4 +1,4 @@
-package com.kariaki.choice.Notification;
+package com.kariaki.choice.notification;
 
 public class PushNotification {
 

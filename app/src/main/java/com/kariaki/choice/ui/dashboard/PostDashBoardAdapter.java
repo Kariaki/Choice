@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.Dashboard;
+package com.kariaki.choice.ui.dashboard;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.kariaki.choice.model.CloudPost;
 import com.kariaki.choice.R;
-import com.kariaki.choice.ui.Post.PostTypes;
+import com.kariaki.choice.ui.post.PostTypes;
 
 import java.util.ArrayList;
 import java.util.List;

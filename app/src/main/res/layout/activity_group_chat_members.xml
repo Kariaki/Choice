@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:id="@+id/chatMemberRootView"
     android:orientation="vertical"
-    tools:context=".UI.GroupChat.GroupChatMembers">
+    tools:context=".ui.groupchat.GroupChatMembers">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/otherUserProfileToolbar"

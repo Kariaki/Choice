@@ -1,4 +1,4 @@
-package com.kariaki.choice.model.Database.Entities;
+package com.kariaki.choice.model.database.entities;
 
 public class GroupChatInformation {
 

@@ -26,8 +26,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.kariaki.choice.UI.RegistrationAndLogin.RegisterUser;
-import com.kariaki.choice.UI.util.Theme;
+import com.kariaki.choice.ui.registrationandlogin.RegisterUser;
+import com.kariaki.choice.ui.util.Theme;
 
 public class LaunchPage extends AppCompatActivity {
 

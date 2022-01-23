@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.Chat.ChatList;
+package com.kariaki.choice.ui.chat.chatlist;
 
 public class ChatListAdapter {
 }

@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.Messaging.ChatViewHolders;
+package com.kariaki.choice.ui.messaging.chatviewholders;
 
 import android.content.Context;
 import android.view.View;
@@ -6,7 +6,7 @@ import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import com.kariaki.choice.model.MessageType;
-import com.kariaki.choice.ui.Messaging.Adapter.ChatAdapter;
+import com.kariaki.choice.ui.messaging.adapter.ChatAdapter;
 
 public abstract class ChatMainViewHolder extends RecyclerView.ViewHolder {
     public ChatMainViewHolder(@NonNull View itemView) {

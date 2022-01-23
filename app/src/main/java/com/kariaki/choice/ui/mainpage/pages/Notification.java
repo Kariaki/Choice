@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.MainPage.Pages;
+package com.kariaki.choice.ui.mainpage.pages;
 
 import android.os.Bundle;
 
@@ -15,9 +15,9 @@ import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 import com.kariaki.choice.R;
-import com.kariaki.choice.ui.MainPage.Pages.Notifications.Adapters.PageAdapter;
-import com.kariaki.choice.ui.MainPage.Pages.Notifications.GeneralNotification;
-import com.kariaki.choice.ui.MainPage.Pages.Notifications.MyContent;
+import com.kariaki.choice.ui.mainpage.pages.notifications.adapters.PageAdapter;
+import com.kariaki.choice.ui.mainpage.pages.notifications.GeneralNotification;
+import com.kariaki.choice.ui.mainpage.pages.notifications.MyContent;
 
 import java.util.ArrayList;
 import java.util.List;

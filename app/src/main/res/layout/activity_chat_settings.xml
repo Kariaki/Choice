@@ -7,7 +7,7 @@
 
 
     android:id="@+id/chatSettingsRootView"
-    tools:context="com.kariaki.choice.UI.Settings.ChatSettingsActivity">
+    tools:context="com.kariaki.choice.ui.settings.ChatSettingsActivity">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"

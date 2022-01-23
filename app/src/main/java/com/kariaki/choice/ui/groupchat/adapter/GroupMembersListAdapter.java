@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.GroupChat.Adapter;
+package com.kariaki.choice.ui.groupchat.adapter;
 
 import android.app.Activity;
 import android.view.LayoutInflater;
@@ -11,7 +11,7 @@ import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.kariaki.choice.R;
-import com.kariaki.choice.ui.GroupChat.GroupMember;
+import com.kariaki.choice.ui.groupchat.GroupMember;
 import com.kariaki.choice.ui.util.UserNaming;
 
 import java.util.ArrayList;

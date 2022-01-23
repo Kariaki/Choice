@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.Profiles.SocialActivities;
+package com.kariaki.choice.ui.profiles.socialactivities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,11 +23,11 @@ import com.kariaki.choice.model.Post;
 import com.kariaki.choice.model.UserInformation;
 import com.kariaki.choice.R;
 import com.kariaki.choice.ui.mainpage.pages.notifications.adapters.PageAdapter;
-import com.kariaki.choice.ui.Post.Adapter.PostAdapter;
-import com.kariaki.choice.ui.Post.PostInfo;
-import com.kariaki.choice.ui.Profiles.SocialActivities.Pages.Posts;
-import com.kariaki.choice.ui.Profiles.SocialActivities.Pages.Repeats;
-import com.kariaki.choice.ui.Profiles.SocialActivities.Pages.Reposts;
+import com.kariaki.choice.ui.post.adapter.PostAdapter;
+import com.kariaki.choice.ui.post.PostInfo;
+import com.kariaki.choice.ui.profiles.socialactivities.pages.Posts;
+import com.kariaki.choice.ui.profiles.socialactivities.pages.Repeats;
+import com.kariaki.choice.ui.profiles.socialactivities.pages.Reposts;
 
 import java.util.ArrayList;
 import java.util.List;

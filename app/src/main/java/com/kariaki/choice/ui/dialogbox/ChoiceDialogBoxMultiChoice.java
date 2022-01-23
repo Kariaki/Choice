@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.DialogBox;
+package com.kariaki.choice.ui.dialogbox;
 
 import android.app.Dialog;
 import android.content.SharedPreferences;
@@ -17,7 +17,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.kariaki.choice.R;
-import com.kariaki.choice.ui.DialogBox.ListAdapter.MultiChoiceAdapter;
+import com.kariaki.choice.ui.dialogbox.listadapter.MultiChoiceAdapter;
 import com.kariaki.choice.ui.util.Theme;
 
 import java.util.ArrayList;

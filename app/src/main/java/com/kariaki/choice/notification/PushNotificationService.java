@@ -1,4 +1,4 @@
-package com.kariaki.choice.Notification;
+package com.kariaki.choice.notification;
 
 import android.app.IntentService;
 import android.app.PendingIntent;
@@ -24,20 +24,20 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.kariaki.choice.model.CloudPost;
-import com.kariaki.choice.model.Database.Entities.ChoiceUser;
-import com.kariaki.choice.model.Database.Entities.CloudMessage;
-import com.kariaki.choice.model.Database.Entities.NotificationForPost;
+import com.kariaki.choice.model.database.entities.ChoiceUser;
+import com.kariaki.choice.model.database.entities.CloudMessage;
+import com.kariaki.choice.model.database.entities.NotificationForPost;
 import com.kariaki.choice.model.MessageType;
 import com.kariaki.choice.model.Post;
 import com.kariaki.choice.model.UserDetail;
 import com.kariaki.choice.R;
-import com.kariaki.choice.UI.Chat.ChannelTypes;
-import com.kariaki.choice.UI.Chat.ChatPage;
-import com.kariaki.choice.UI.Comment.CommentPage;
-import com.kariaki.choice.UI.GroupChat.GroupChatInformation;
-import com.kariaki.choice.UI.MainPage.util.MainFunctions;
-import com.kariaki.choice.UI.Post.PostInfo;
-import com.kariaki.choice.UI.util.Time.TimeFactor;
+import com.kariaki.choice.ui.chat.ChannelTypes;
+import com.kariaki.choice.ui.chat.ChatPage;
+import com.kariaki.choice.ui.comment.CommentPage;
+import com.kariaki.choice.ui.groupchat.GroupChatInformation;
+import com.kariaki.choice.ui.mainpage.util.MainFunctions;
+import com.kariaki.choice.ui.post.PostInfo;
+import com.kariaki.choice.ui.util.time.TimeFactor;
 
 import static com.kariaki.choice.Choice.chatChannel;
 import static com.kariaki.choice.Choice.postChannel;

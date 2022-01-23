@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.Messaging.ChatViewHolders.ChatInvite;
+package com.kariaki.choice.ui.messaging.chatviewholders.chatinvite;
 
 import android.content.Context;
 import android.view.LayoutInflater;

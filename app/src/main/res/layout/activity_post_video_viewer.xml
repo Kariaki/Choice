@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/grayGreen"
-    tools:context="com.kariaki.choice.UI.Post.Viewer.PostVideoViewer">
+    tools:context="com.kariaki.choice.ui.post.viewer.PostVideoViewer">
 
     <ImageView
         android:id="@+id/viewVideoBackArrow"

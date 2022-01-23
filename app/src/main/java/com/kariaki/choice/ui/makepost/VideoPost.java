@@ -16,8 +16,8 @@ import android.widget.TextView;
 import android.widget.VideoView;
 
 import com.kariaki.choice.R;
-import com.kariaki.choice.ui.Post.PostTypes;
-import com.kariaki.choice.ui.util.Time.TimeFactor;
+import com.kariaki.choice.ui.post.PostTypes;
+import com.kariaki.choice.ui.util.time.TimeFactor;
 
 import org.jetbrains.annotations.NotNull;
 

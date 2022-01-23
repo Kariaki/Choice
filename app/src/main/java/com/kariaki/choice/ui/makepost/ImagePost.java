@@ -23,8 +23,8 @@ import android.widget.Toast;
 import com.kariaki.choice.R;
 import com.kariaki.choice.ui.mainpage.adapters.MakePostAdapter;
 import com.kariaki.choice.ui.mainpage.bottomfragments.BottomMakePost;
-import com.kariaki.choice.ui.Post.Adapter.AddImageAdapter;
-import com.kariaki.choice.ui.Post.Adapter.ViewPagerAdapter;
+import com.kariaki.choice.ui.post.adapter.AddImageAdapter;
+import com.kariaki.choice.ui.post.adapter.ViewPagerAdapter;
 
 import java.util.ArrayList;
 import java.util.List;

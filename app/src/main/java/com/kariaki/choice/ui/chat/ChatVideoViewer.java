@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.Chat;
+package com.kariaki.choice.ui.chat;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,7 +21,7 @@ import android.widget.VideoView;
 import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
 import com.kariaki.choice.R;
-import com.kariaki.choice.ui.util.Time.TimeFactor;
+import com.kariaki.choice.ui.util.time.TimeFactor;
 
 import java.util.Timer;
 import java.util.TimerTask;

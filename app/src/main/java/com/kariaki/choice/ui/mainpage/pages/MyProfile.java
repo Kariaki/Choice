@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.MainPage.Pages;
+package com.kariaki.choice.ui.mainpage.pages;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -18,9 +18,9 @@ import com.kariaki.choice.model.database.ChoiceViewModel;
 import com.kariaki.choice.model.database.entities.ChoiceUser;
 import com.kariaki.choice.model.UserInformation;
 import com.kariaki.choice.R;
-import com.kariaki.choice.ui.Profiles.EditProfileOptions;
-import com.kariaki.choice.ui.Profiles.SettingsPage;
-import com.kariaki.choice.ui.Profiles.ViewProfilePicture;
+import com.kariaki.choice.ui.profiles.EditProfileOptions;
+import com.kariaki.choice.ui.profiles.SettingsPage;
+import com.kariaki.choice.ui.profiles.ViewProfilePicture;
 import com.vanniktech.emoji.EmojiTextView;
 
 import java.util.ArrayList;

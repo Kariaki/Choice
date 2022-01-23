@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.Messaging.ChatViewHolders;
+package com.kariaki.choice.ui.messaging.chatviewholders;
 
 import android.content.Context;
 import android.view.View;
@@ -13,8 +13,8 @@ import com.kariaki.choice.model.database.entities.Message;
 import com.kariaki.choice.model.database.MessageState;
 import com.kariaki.choice.model.MessageType;
 import com.kariaki.choice.R;
-import com.kariaki.choice.ui.Messaging.Adapter.ChatAdapter;
-import com.kariaki.choice.ui.util.Time.TimeFactor;
+import com.kariaki.choice.ui.messaging.adapter.ChatAdapter;
+import com.kariaki.choice.ui.util.time.TimeFactor;
 
 import java.io.File;
 import java.util.ArrayList;

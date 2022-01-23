@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.Profiles.SocialActivities.Pages;
+package com.kariaki.choice.ui.profiles.socialactivities.pages;
 
 import android.os.Bundle;
 
@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 
 import com.kariaki.choice.model.Post;
 import com.kariaki.choice.R;
-import com.kariaki.choice.ui.Post.Adapter.PostAdapter;
+import com.kariaki.choice.ui.post.adapter.PostAdapter;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.MainPage.Pages.Notifications.Adapters;
+package com.kariaki.choice.ui.mainpage.pages.notifications.adapters;
 
 import android.view.LayoutInflater;
 import android.view.View;

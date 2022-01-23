@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.Post.Adapter;
+package com.kariaki.choice.ui.post.adapter;
 
 import android.content.Context;
 import android.view.View;
@@ -6,7 +6,7 @@ import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.kariaki.choice.ui.Post.PostTypes;
+import com.kariaki.choice.ui.post.PostTypes;
 
 public abstract class PostMainViewHolder extends RecyclerView.ViewHolder {
     public PostMainViewHolder(@NonNull View itemView) {

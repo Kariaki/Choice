@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.Dashboard;
+package com.kariaki.choice.ui.dashboard;
 
 import android.os.Build;
 import android.view.View;
@@ -19,8 +19,8 @@ import com.google.firebase.database.ValueEventListener;
 import com.kariaki.choice.model.CloudPost;
 import com.kariaki.choice.model.UserInformation;
 import com.kariaki.choice.R;
-import com.kariaki.choice.ui.Post.PostTypes;
-import com.kariaki.choice.ui.util.Time.TimeFactor;
+import com.kariaki.choice.ui.post.PostTypes;
+import com.kariaki.choice.ui.util.time.TimeFactor;
 import com.vanniktech.emoji.EmojiTextView;
 
 public class DashBoardMergePostViewHolder extends DashBoardMainViewHolder {

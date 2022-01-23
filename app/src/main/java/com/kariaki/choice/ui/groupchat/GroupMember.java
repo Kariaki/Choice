@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.GroupChat;
+package com.kariaki.choice.ui.groupchat;
 
 public class GroupMember {
     String memberPhone;

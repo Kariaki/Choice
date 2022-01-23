@@ -1,6 +1,4 @@
-package com.kariaki.choice.DatabaseTest;
-
-import com.kariaki.choice.UI.MakePost.FinishPost;
+package com.kariaki.choice.databasetest;
 
 public class Items {
 

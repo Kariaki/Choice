@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.Post.Adapter;
+package com.kariaki.choice.ui.post.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.kariaki.choice.model.Post;
 import com.kariaki.choice.R;
-import com.kariaki.choice.ui.Post.PostTypes;
+import com.kariaki.choice.ui.post.PostTypes;
 import com.vanniktech.emoji.EmojiManager;
 import com.vanniktech.emoji.ios.IosEmojiProvider;
 

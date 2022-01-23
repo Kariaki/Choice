@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.MainPage.Adapters;
+package com.kariaki.choice.ui.mainpage.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;

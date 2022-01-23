@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.GroupChat;
+package com.kariaki.choice.ui.groupchat;
 
 import android.content.ContentResolver;
 import android.content.Intent;
@@ -33,13 +33,13 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.kariaki.choice.model.UserInformation;
 import com.kariaki.choice.R;
-import com.kariaki.choice.ui.DialogBox.ChoiceDialogBox;
-import com.kariaki.choice.ui.DialogBox.ChoiceNewDialogBox;
-import com.kariaki.choice.ui.GroupChat.Adapter.GroupChatOptions;
-import com.kariaki.choice.ui.Profiles.EditFromBottom;
-import com.kariaki.choice.ui.Profiles.ViewProfilePicture;
+import com.kariaki.choice.ui.dialogbox.ChoiceDialogBox;
+import com.kariaki.choice.ui.dialogbox.ChoiceNewDialogBox;
+import com.kariaki.choice.ui.groupchat.adapter.GroupChatOptions;
+import com.kariaki.choice.ui.profiles.EditFromBottom;
+import com.kariaki.choice.ui.profiles.ViewProfilePicture;
 import com.kariaki.choice.ui.util.Theme;
-import com.kariaki.choice.ui.util.Time.TimeFactor;
+import com.kariaki.choice.ui.util.time.TimeFactor;
 import com.kariaki.choice.ui.util.UserNaming;
 import com.theartofdev.edmodo.cropper.CropImage;
 import com.theartofdev.edmodo.cropper.CropImageView;

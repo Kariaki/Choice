@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.util.Time;
+package com.kariaki.choice.ui.util.time;
 
 import android.os.Build;
 
@@ -52,10 +52,8 @@ public class TimeFactor {
         Calendar calendar = Calendar.getInstance();
 
         calendar.setTimeInMillis((int) milliSeconds);
-        Date date = calendar.getTime();
-        long current_time = System.currentTimeMillis();
-        return formatter.format(calendar.getTime());
 
+        return formatter.format(calendar.getTime());
     }
 
 

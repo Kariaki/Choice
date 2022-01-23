@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.GroupChat;
+package com.kariaki.choice.ui.groupchat;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -19,7 +19,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.kariaki.choice.R;
-import com.kariaki.choice.ui.GroupChat.Adapter.GroupMembersListAdapter;
+import com.kariaki.choice.ui.groupchat.adapter.GroupMembersListAdapter;
 import com.kariaki.choice.ui.util.Theme;
 
 import java.util.ArrayList;

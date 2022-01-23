@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.DialogBox.ListAdapter;
+package com.kariaki.choice.ui.dialogbox.listadapter;
 
 import android.view.LayoutInflater;
 import android.view.View;

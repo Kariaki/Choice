@@ -1,4 +1,4 @@
-package com.kariaki.choice.ui.RegistrationAndLogin;
+package com.kariaki.choice.ui.registrationandlogin;
 
 import androidx.appcompat.app.AppCompatActivity;
 

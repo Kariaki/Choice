@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/whiteGreen"
-    tools:context=".UI.RegistrationAndLogin.AuthenticationPage">
+    tools:context=".ui.registrationandlogin.AuthenticationPage">
 
-    <com.kariaki.choice.UI.RegistrationAndLogin.OtpEditText
+    <com.kariaki.choice.ui.registrationandlogin.OtpEditText
         android:id="@+id/editTextPhone"
         android:layout_width="260dp"
         android:layout_height="wrap_content"
